@@ -133,10 +133,18 @@ sup {
 a {
   color: #538ac7;
   text-decoration: none;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-transition: all 0.7s ease;
+   -moz-transition: all 0.7s ease;
+   -o-transition: all 0.7s ease; }
   a:hover {
     color: #32649b;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+   }
 
 a.title {
   color: #538ac7;
@@ -151,6 +159,20 @@ a.title {
     -webkit-transition: all 0.7s ease;
      -moz-transition: all 0.7s ease;
      -o-transition: all 0.7s ease;}
+
+
+  a.link {
+   text-decoration: none;
+   background-color: transparent;
+   -webkit-transition: all 0.7s ease;
+   -moz-transition: all 0.7s ease;
+   -o-transition: all 0.7s ease; }
+   a.link:hover {
+    text-decoration: underline;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+  }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
