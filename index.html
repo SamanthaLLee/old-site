@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="main.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -15,34 +14,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-    });
-    });
+      $(document).ready(function(){
+        $('a[href*="#"]:not([href="#"]):not([href="#carouselControls"])').on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            }); } }); });
     </script>
-
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -111,18 +95,16 @@
           </a>
           </div>
 
-          <br><br><h3 align="left" class="mb-0">
-            Hello! I am Samantha Lee, an honors student at Rutgers University pursuing a double major
-            in computer science and cognitive science. I have a passion for learning and teaching alike,
-            along with a notable interest in artificial intelligence and data science. Currently, I am
-            a research assistant at InfoSeeking and am actively seeking internships for summer 2020. In
+          <br><br><h3 class="about" align="left" class="mb-0">
+            Hello! I am <b>Samantha Lee</b>, an honors student at Rutgers University pursuing a double major
+            in <b>computer science</b> and <b>cognitive science</b>. I have a passion for learning and teaching alike,
+            along with a notable interest in <b>artificial intelligence</b> and <b>data science</b>. Currently, I am
+            a research assistant at <a href="http://infoseeking.org">InfoSeeking<a> and am actively seeking internships for summer 2020. In
             the future, I plan to attend graduate school.
-
-
-
           </h3>
       </div>
-      </section><br><br><br><p id="edu"></p>
+      <p id="edu"></p>
+    </section><br><br>
 
       <hr class="m-0" >
 
@@ -314,7 +296,7 @@
               <tr>
                 <td><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div>
-                    <h4 class="mb-0">Maze Solver</h4>
+                    <h3 class="mb-0">Maze Solver</h3>
                     <ul>
                       <li>Program an interactive maze solver in Java</li>
                       <li>Apply object-oriented programming in a creative way</li>
@@ -322,7 +304,7 @@
                   </div></td>
 
                 <td><div>
-                  <h4 class="mb-0">Infix Expression Solver</h4>
+                  <h3 class="mb-0">Infix Expression Solver</h3>
                   <ul>
                     <li>Build calculator to evaluate infix expressions in Java</li>
                     <li>Utilize recursion, stacks, and other data structures</li>
@@ -330,7 +312,7 @@
                 </div></td>
 
                 <td><div>
-                  <h4 class="mb-0">Copy/Paste Manager</h4>
+                  <h3 class="mb-0">Copy/Paste Manager</h3>
                   <ul>
                     <li>Build Chrome extension that allows users to manage multiple snippets of text to copy and paste</li>
                     <li>Implement Chrome APIs tabs, contextMenus, storage, and more</li>
@@ -343,7 +325,7 @@
               <tr>
                 <td><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div>
-                    <h4 class="mb-0">Discarded Tab Saver</h4>
+                    <h3 class="mb-0">Discarded Tab Saver</h3>
                     <ul>
                       <li>Build Chrome extension that enables users to automatically close and save discarded tabs to save memory</li>
                       <li>Implement Chrome API tabs and storage</li>
@@ -351,7 +333,7 @@
                   </div></td>
 
                 <td><div>
-                  <h4 class="mb-0">Tumblr Themes</h4>
+                  <h3 class="mb-0">Tumblr Themes</h3>
                   <ul>
                     <li>Develop functional themes for Tumblr blogs using HTML and CSS</li>
                     <li>Design appealing and intuitive user interfaces</li>
@@ -359,7 +341,7 @@
                 </div></td>
 
                 <td><div>
-                  <h4 class="mb-0">Twitter Bots</h4>
+                  <h3 class="mb-0">Twitter Bots</h3>
                   <ul>
                     <li>Build automated Twitter bots</li>
                     <li>Utilize Twitter APIs and various Python libraries</li>
