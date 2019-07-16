@@ -4438,24 +4438,6 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   color: #222; }
 
-  .cycle-slideshow {
-
-      position: relative;
-
-      z-index: 1;
-
-      width: 50%; /**adjust width as required**/
-
-      margin:0 auto;
-
-      text-align: center;
-
-  }
-
-  .cycle-slideshow img { max-width: 100% }
-
-  .center {text-align:center}
-
 .carousel {
   height: auto;
   float: left;
