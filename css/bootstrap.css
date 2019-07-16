@@ -28,7 +28,7 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
- 
+
 *,
 *::before,
 *::after {
@@ -4437,6 +4437,24 @@ a.close.disabled {
 .popover-body {
   padding: 0.5rem 0.75rem;
   color: #222; }
+
+  .cycle-slideshow {
+
+      position: relative;
+
+      z-index: 1;
+
+      width: 50%; /**adjust width as required**/
+
+      margin:0 auto;
+
+      text-align: center;
+
+  }
+
+  .cycle-slideshow img { max-width: 100% }
+
+  .center {text-align:center}
 
 .carousel {
   height: auto;
