@@ -404,6 +404,9 @@ h6, .h6 {
   font-size: 1.09375rem;
   font-weight: 300; }
 
+.space {
+    letter-spacing: 7px}
+
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
