@@ -28,6 +28,12 @@
               window.location.hash = hash;
             }); } }); });
     </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip("");
+      });
+    </script>
+
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -35,13 +41,13 @@
        <div class="container-fluid introduction">
       <h1 class="title"><a class="title" href="#">SAMANTHA L. LEE</h1></a>
       <p class="lead">
-        <a class="link" href="mailto:samantha.l.lee@rutgers.edu">samantha.l.lee@rutgers.edu</a> •
-        <a class="link" href="https://www.linkedin.com/in/samanthallee/">linkedin</a> •
-        <a class="link" href="https://github.com/SamanthaLLee">github</a> •
+        <a class="link" href="resume.pdf">resume</a> •
+        <a class="link" data-toggle="tooltip" data-placement="bottom" title="samantha.l.lee@rutgers.edu" href="mailto:samantha.l.lee@rutgers.edu">email</a> •
+        <a class="link" data-toggle="tooltip" data-placement="bottom" title="in/SamanthaLLee" href="https://www.linkedin.com/in/samanthallee/">linkedin</a> •
+        <a class="link" data-toggle="tooltip" data-placement="bottom" title="@SamanthaLLee" href="https://github.com/SamanthaLLee">github</a> •
         <a class="link" href="https://rutgers.joinhandshake.com/users/13495153">handshake</a>
 
-      <p class="space">📍 new jersey, usa </p></p><br>
-
+        <br><br>
       <a href="#about"><button class="button1 btn-danger"><span>enter </span></button></a>
     <center></div></div>
 
@@ -71,6 +77,8 @@
 
     <div>
       <section class="p-3 p-lg-5 d-flex align-items-center" >
+
+          <!-- carousel pics must be square!!! fix later!! -->
 
           <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false" >
           <div class="carousel-inner" role="listbox">
@@ -103,7 +111,7 @@
           <br><br><h3 class="about" align="left" class="mb-0">
 
 
-            Hello! I am Samantha Lee, an Honors Program student at Rutgers University pursuing a double major
+            Hello! I am Samantha Lee, an Honors Program student at Rutgers University–New Brunswick pursuing a double major
             in <b>computer science</b> and <b>cognitive science</b>. I have a passion for learning and teaching alike,
             along with a notable interest in <b>artificial intelligence</b> and <b>data science</b>. Currently, I am
             a research assistant at <a href="http://infoseeking.org">InfoSeeking<a>, where I develop software that
@@ -279,8 +287,8 @@
                   <td><div class="text-md">
                     <ul>
                       <li>Design club graphics and develop brand image</li>
-                      <li>Market events to encourage involvement, community, and career growth </li>
-                      <li>Plan and organize HackHERS, an annual women-centric hackathon</li>
+                      <li>Encourage a strong sense of community, involvement, and career growth </li>
+                      <li>Plan, organize, and market HackHERS, an annual women-centric hackathon</li>
                     </ul>
                   </div></td>
                   <td><div class="text-md-right">
@@ -314,24 +322,24 @@
                   <div>
                     <h3 class="mb-0">Maze Solver</h3>
                     <ul>
-                      <li>Program an interactive maze solver in Java</li>
-                      <li>Apply object-oriented programming in a creative way</li>
+                      <li>Programmed an interactive maze solver in Java</li>
+                      <li>Applied object-oriented programming in a creative way</li>
                     </ul>
                   </div></td>
 
                 <td><div>
                   <h3 class="mb-0">Infix Expression Solver</h3>
                   <ul>
-                    <li>Build calculator to evaluate infix expressions in Java</li>
-                    <li>Utilize recursion, stacks, and other data structures</li>
+                    <li>Built calculator to evaluate infix expressions in Java</li>
+                    <li>Utilized recursion, stacks, and other data structures</li>
                   </ul>
                 </div></td>
 
                 <td><div>
                   <h3 class="mb-0">Polynomial Calculator</h3>
                   <ul>
-                    <li>Build calculator that evaluates, adds, and multiplies polynomials</li>
-                    <li>Utilize linked lists to compute and display results</li>
+                    <li>Built calculator that evaluates, adds, and multiplies polynomials</li>
+                    <li>Utilized linked lists to compute and display results</li>
                   </ul>
                 </div></td>
 

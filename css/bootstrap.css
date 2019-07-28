@@ -3681,7 +3681,7 @@ input[type="button"].btn-block {
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
       width: 100%;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   }
 
 .alert {
