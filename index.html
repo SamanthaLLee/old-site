@@ -28,18 +28,34 @@
               window.location.hash = hash;
             }); } }); });
     </script>
+
+    <script>
+    $(document).ready(function(){
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
+      $('.nav-tabs a').on('shown.bs.tab', function(event){
+        var x = $(event.target).text();         // active tab
+        var y = $(event.relatedTarget).text();  // previous tab
+        $(".act span").text(x);
+        $(".prev span").text(y);
+      });
+    });
+    </script>
+
     <script>
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip("");
       });
     </script>
 
+
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <div class="jumbotron jumbotron-fluid text-center"><center>
        <div class="container-fluid introduction">
-      <h1 class="title"><a class="title" href="#">SAMANTHA L. LEE</h1></a>
+      <h1 class="title"><a class="title" href="#about">SAMANTHA L. LEE</h1></a>
       <p class="lead">
         <a class="link" data-toggle="tooltip" data-placement="bottom" title="samantha.lin.lee@gmail.com" href="mailto:samantha.lin.lee@gmail.com">email</a> •
         <a class="link" data-toggle="tooltip" data-placement="bottom" title="in/SamanthaLLee" href="https://www.linkedin.com/in/samanthallee/">linkedin</a> •
@@ -60,7 +76,7 @@
             <a class="nav-link" href="#resumes">RESUMES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#values">VALUES</a>
+            <a class="nav-link" href="#eduxp">EDUCATION, EXPERIENCE, ETC.</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#more">ETC</a>
@@ -133,7 +149,7 @@
 
       <section class="p-3 p-lg-5 d-flex align-items-center" >
         <div class="w-100">
-          <h2><center>R E S U M E S</center></h2>
+          <h2><center>RESUMES</center></h2>
             <center><i>click to expand</i></center><br>
 
           <center>
@@ -141,20 +157,130 @@
           <a href="creative_resume.pdf"><img class="resume" src="creative_resume.jpg" width="47%" height=auto></img></a>
           </center>
 
-          <center><i><br>For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn<a>.</i></center><br>
-
-          <p id="values"></p>
+          <p id="eduxp"></p>
         </div>
       </section>
-
-
 
 
       <center><hr class="m-0"></center>
 
       <section class="p-3 p-lg-5 d-flex align-items-center" >
         <div class="w-100">
-          <h2><center>ETC.</center></h2>
+          <h2><center>EDUCATION, EXPERIENCE, ETC.</center></h2>
+          <br>
+
+          <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h3>Graduated from <b>Parsippany High School</b></h3>
+                <p><i>June 2018 ∙ Parsippany, NJ </i></p>
+                <ul><small>
+                  <li>GPA: 3.9 / 4.0 (unweighted)</li>
+                  <li>Activities: Key Club (president, webmaster), marching band (trumpet section leader), National French Honor Society (vice president), National Honor Society, concert band (flutist)</li>
+                </small></ul>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h3>Started attending <b>Rutgers University</b></h3>
+                <p><i>Sept 2018 ∙ New Brunswick, NJ</i></p>
+                <ul><small>
+                  <li>B.S. in Computer Science, B.A. in Cognitive Science</li>
+                  <li>School of Arts and Sciences Honors Program</li>
+                  <li>DIMACS-Douglass Computer Science Living-Learning Community</li>
+                  <li>GPA: 3.9 / 4.0</li>
+                </small></ul>
+              </div>
+            </div>
+          <div class="container left">
+            <div class="content">
+              <h3>Started job at the <b>Busch Student Center</b></h3>
+              <p><i>Sept 2018 ∙ Piscataway, NJ</i></p>
+              <ul><small>
+                <li>Respond to telephone and in-person requests for information about the campus, student centers, and events</li>
+                <li>Coordinate events and programs via data entry, oral and written communication, troubleshooting, and more</li>
+                <li>Monitor the building for safety and security and ensure guest comfort and satisfaction</li>
+              </small></ul>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>Became Public Relations Officer of <b>DDCC</b>*</h3>
+              <p><i>Sept 2018 ∙ Piscataway, NJ</i></p>
+              <ul><small>
+                <li>Teach middle school girls in groups of 10+ how to program in various languages</li>
+                <li>Lead biweekly individualized workshops that introduce the basics of Java, HTML, and more</li>
+                <li>Expand marketing by producing publicity materials and rejuvenating social media presence</li>
+              </small></ul>
+              <small>* DDCC is Douglass-DIMACS Computing Corps, a club affiliated with Girls Who Code College Loops.</small>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h3>Joined the <b>InfoSeeking Lab</b></h3>
+              <p><i>Jan 2019 ∙ New Brunswick, NJ</i></p>
+              <ul><small>
+                <li>Upgrade software in PHP that helps researchers design and run information retrieval studies</li>
+                <li>Build a Chrome Extension that collects browsing data in JavaScript to simplify behavioral research</li>
+                <li>Employ mySQL and Laravel to organize dozens of streams of data and allow for accessibility and readability</li>
+                <li>Extract features from browsing data in Python for downstream machine learning</li>
+
+              </small></ul>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>Became <b>WiCS</b>* Graphic Chair</h3>
+              <p><i>Sept 2019 ∙ Piscataway, NJ</i></p>
+              <ul><small>
+                <li>Design club graphics in Adobe Photoshop to fortify brand image and attract sponsors</li>
+                <li>Revitalize club's 300+ member community with a focus on career growth and skill acquisition</li>
+                <li>Organize annual women-centric hackathon (HackHERS) and market to thousands across campus and online</li>
+              </small></ul>
+              <small>* WiCS is Women in Computer Science</small>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h3>Became a <b>CSLLC</b>* Peer Mentor</h3>
+              <p><i>Sept 2019 ∙ Piscataway, NJ</i></p>
+              <ul><small>
+                <li>Advise and mentor underclassmen women in computer science, both socially and academically</li>
+                <li>Assist freshman during the transition into college life</li>
+                <li>Promote inclusive and supportive community among women in technology</li>
+              </small></ul>
+              <small>* The CSLLC is the (Douglass-DIMACS-SAS) Computer Science Living-Learning Community, an all-women group of computer science majors</small>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>Became a <b>SASHP</b>* Peer Tutor at the <b>RLCs</b>**</h3>
+              <p><i>Jan 2018 ∙ New Brunswick, NJ</i></p>
+              <ul><small>
+                <li>Tutor upwards of 20 students in Introduction to Computer Science and Data Structures</li>
+                <li>Analyze student comprehension and accommodate learning styles to facilitate strong study behaviors</li>
+                <li>Conduct personalized one-on-one sessions to stimulate and maintain tutee engagement</li>
+              </small></ul>
+              <small>* The SASHP is the School of Arts and Sciences Honors Program
+              <br>** The RLCS are the Rutgers Learning Centers</small>
+            </div>
+          </div>
+        </div>
+
+        <br><center><i><br>For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn<a>.</i></center>
+
+
+        <h3 class="about" align="left" class="mb-0">
+
+          <p id="more"></p>
+        </div>
+      </section>
+
+      <center><hr class="m-0"></center>
+
+      <section class="p-3 p-lg-5 d-flex align-items-center" >
+        <div class="w-100">
+          <h2><center>FUN FACTS</center></h2>
           <center><i>hover to expand</i></center><br>
 
             <div id="moreInfo1"><div id="moreInfo1text">
@@ -199,14 +325,9 @@
 
             <div id="moreInfo1"><div id="moreInfo1text">
 
-              I know the alphabet backwards!!
+              I know the alphabet backwards!
 
-            </div></div><br>
-
-
-          <br><br><h3 class="about" align="left" class="mb-0">
-
-          <p id=""></p>
+            </div></div>
         </div>
       </section>
 
