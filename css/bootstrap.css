@@ -206,6 +206,27 @@ img {
   vertical-align: middle;
   border-style: none; }
 
+  .arrow {
+    
+    top:80%;
+    right:50%;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .arrow:hover {
+    margin-top:10px;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
 
 .resume {
   -webkit-transition: all 0.5s ease;
@@ -224,6 +245,8 @@ img {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
+
 
 svg {
   overflow: hidden;
@@ -290,6 +313,8 @@ button:focus {
     opacity: 1;
     right: 0;
   }
+
+
 
 
 input,
@@ -3686,7 +3711,7 @@ input[type="button"].btn-block {
 
 .jumbotron {
   padding: 1rem 1rem;
-  background-color:#000;
+  background-color:#ddd;
   height: 120vh;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
@@ -4282,6 +4307,7 @@ a.close.disabled {
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px; } }
+
 
 .tooltip {
   position: absolute;
