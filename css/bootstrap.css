@@ -35,7 +35,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: Amiko;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -51,7 +51,7 @@ body {
   line-height: 1.5;
   color: #000;
   text-align: left;
-  background-color: #bae8e6; }
+  background-color: #FEB32C; }
 
   [tabindex="-1"]:focus {
     outline: 0 !important; }
@@ -66,14 +66,48 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; }
 
 h1.title {
-  font-size: 100px;
-  color: #fff;
-  letter-spacing: 3px;
+position: absolute;
+left: 60px;
+top: 69px;
+
+font-family: Amiko;
+font-style: normal;
+font-weight: bold;
+font-size: 60px;
+line-height: 36px;;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
+	
+p.currentTitles {
+	position: absolute;
+	left: 123px;
+	top: 202px;
+	text-align: left;
+
+	font-family: Amiko;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+p.accounts {
+	position: absolute;
+	left: 115px;
+	top: 361px;
+}
+
+p.links {
+	position: absolute;
+	height: 42px;
+	right: 80px;
+	top: 69px;
+	font-size: 24px;
+	line-height: 36px;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -148,7 +182,7 @@ a {
    }
 
 a.title {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   background-color: transparent;
   -webkit-transition: all 0.7s ease;
@@ -156,7 +190,6 @@ a.title {
    -o-transition: all 0.7s ease;}
   a.title:hover {
     color: #fff;
-    letter-spacing: 15px;
     text-shadow: 3px 3px #00fffb, -3px -3px #ff0d00;
     -webkit-transition: all 0.7s ease;
      -moz-transition: all 0.7s ease;
@@ -164,14 +197,14 @@ a.title {
 
 
   a.link {
-   color: #7af8ff;
+   color: #fff;
    text-decoration: none;
    background-color: transparent;
+	 padding-right:10px;
    -webkit-transition: all 0.7s ease;
    -moz-transition: all 0.7s ease;
    -o-transition: all 0.7s ease; }
    a.link:hover {
-    color: #fff;
     text-decoration: underline;
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease;
@@ -206,6 +239,23 @@ img {
   vertical-align: middle;
   border-style: none; }
 
+img.landingGraphic {
+	
+	position: absolute;
+	width: 500px;
+	left: 400px;
+	top: 200px;
+
+	background: url(IMG_0719.png);
+	transform: rotate(0.35deg); }
+	
+	img.speechGif {
+		
+		position: absolute;
+		width: 500px;
+		left: 800px;
+		top: 200px; }
+	
   .arrow {
     
     top:80%;
@@ -3711,7 +3761,6 @@ input[type="button"].btn-block {
 
 .jumbotron {
   padding: 1rem 1rem;
-  background-color:#ddd;
   height: 120vh;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
