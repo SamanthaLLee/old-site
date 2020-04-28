@@ -5722,7 +5722,7 @@ button.bg-dark:focus {
   background-color: rgba(0, 0, 0, 0); }
 
 .m-0 {
-  background-color:#b0b0b0;
+  background-color:#ffff;
   margin: 10 !important;
   width: 80%;
 }
