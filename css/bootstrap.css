@@ -67,14 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.title {
 position: absolute;
-left: 60px;
-top: 69px;
+left: 5%;
+top: 12%;
 
 font-family: Amiko;
 font-style: normal;
 font-weight: bold;
-font-size: 60px;
-line-height: 36px;;
+font-size: 400%;
+line-height: 30%;
 }
 
 p {
@@ -242,9 +242,9 @@ img {
 img.landingGraphic {
 	
 	position: absolute;
-	width: 500px;
-	left: 400px;
-	top: 200px;
+	width: 35%;
+	left: 27%;
+	top: 27%;
 
 	background: url(IMG_0719.png);
 	transform: rotate(0.35deg); }
@@ -252,9 +252,9 @@ img.landingGraphic {
 	img.speechGif {
 		
 		position: absolute;
-		width: 500px;
-		left: 800px;
-		top: 200px; }
+		width: 25%;
+		left: 55%;
+		top: 30%; }
 	
   .arrow {
     
