@@ -102,11 +102,11 @@ p.accounts {
 
 p.links {
 	position: absolute;
-	height: 42px;
-	right: 80px;
-	top: 69px;
-	font-size: 24px;
-	line-height: 36px;
+	height: 10%;
+	right: 6%;
+	top: 11%;
+	font-size: 150%;
+	line-height: 50%;
 }
 
 abbr[title],
