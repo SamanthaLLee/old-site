@@ -73,7 +73,7 @@ top: 12%;
 font-family: Amiko;
 font-style: normal;
 font-weight: bold;
-font-size: 400%;
+font-size: 4vw;
 line-height: 30%;
 }
 
@@ -83,21 +83,21 @@ p {
 	
 p.currentTitles {
 	position: absolute;
-	left: 123px;
-	top: 202px;
+	left: 8vw;
+	top: 16vw;
 	text-align: left;
 
 	font-family: Amiko;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 1.6vw;
+	line-height: 150%;
 }
 
 p.accounts {
 	position: absolute;
-	left: 115px;
-	top: 361px;
+	left: 8vw;
+	top: 25vw;
 }
 
 p.links {
@@ -105,7 +105,7 @@ p.links {
 	height: 10%;
 	right: 6%;
 	top: 11%;
-	font-size: 150%;
+	font-size: 1.8vw;
 	line-height: 50%;
 }
 
@@ -255,6 +255,14 @@ img.landingGraphic {
 		width: 25%;
 		left: 55%;
 		top: 30%; }
+		
+	img.account {
+		width: 4vw;
+	}
+	
+	img.account1 {
+		width: 3.2vw;
+	}
 	
   .arrow {
     
