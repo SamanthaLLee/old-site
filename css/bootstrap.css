@@ -67,14 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.title {
 position: absolute;
-left: 5%;
-top: 12%;
+left: 7vh;
+top: 9vh;
 
 font-family: Amiko;
 font-style: normal;
 font-weight: bold;
-font-size: 4vw;
-line-height: 30%;
+font-size: 8vh;
+line-height: 100%;
 }
 
 p {
@@ -102,11 +102,11 @@ p.accounts {
 
 p.links {
 	position: absolute;
-	height: 10%;
-	right: 6%;
-	top: 11%;
-	font-size: 1.8vw;
-	line-height: 50%;
+	width:40vw;
+	right: 5vw;
+	top: 9vh;
+	font-size: 4vh;
+	line-height: 110%;
 }
 
 abbr[title],
@@ -242,7 +242,7 @@ img {
 img.landingGraphic {
 	
 	position: absolute;
-	width: 35%;
+	width: 35vw;
 	left: 27%;
 	top: 27%;
 
@@ -3766,6 +3766,10 @@ input[type="button"].btn-block {
   a.badge-dark:focus, a.badge-dark.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(85, 85, 85, 0.5); }
+		
+.title {
+	width: 40%;
+}
 
 .jumbotron {
   padding: 1rem 1rem;
