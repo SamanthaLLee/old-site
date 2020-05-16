@@ -69,11 +69,12 @@ h1.title {
 position: absolute;
 left: 7vh;
 top: 9vh;
-
 font-family: Amiko;
 font-style: normal;
 font-weight: bold;
-font-size: 4vw;
+font-size: 7vh;
+font-size: 60px;
+
 line-height: 100%;
 }
 
@@ -84,28 +85,29 @@ p {
 p.currentTitles {
 	position: absolute;
 	left: 8vw;
-	top: 16vw;
+	top: 34vh;
 	text-align: left;
 
 	font-family: Amiko;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.6vw;
+	font-size: 25px;
 	line-height: 150%;
 }
 
 p.accounts {
 	position: absolute;
 	left: 8vw;
-	top: 25vw;
+	top: 50vh;
 }
 
 p.links {
 	position: absolute;
-	width:40vw;
+	width: 35vw;
 	right: 5vw;
 	top: 9vh;
 	font-size: 4vh;
+	font-size: 25px;
 	line-height: 110%;
 }
 
@@ -256,13 +258,13 @@ img.landingGraphic {
 		left: 55%;
 		top: 30%; }
 		
-	img.account {
-		width: 4vw;
-	}
-	
-	img.account1 {
-		width: 3.2vw;
-	}
+		img.account {
+			width: 50px;
+		}
+		
+		img.account1 {
+			width: 40px;
+		}
 	
   .arrow {
     
@@ -3767,8 +3769,30 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(85, 85, 85, 0.5); }
 		
-.title {
+.long-title {
 	width: 40%;
+}
+
+.short-title { 
+	width: 40%;
+	display: none; 
+}
+
+.short-title2 { 
+	width: 40%;
+	display: none; 
+}
+
+@media (max-width: 1000px) {
+    .short-title { display: inline-block; }
+    .long-title { display: none; }
+		.short-title2 { display: none; }
+}
+
+@media (max-width: 620px) {
+    .short-title2 { display: inline-block; }
+    .long-title { display: none; }
+		.short-title { display: none; }
 }
 
 .jumbotron {
