@@ -3783,14 +3783,20 @@ input[type="button"].btn-block {
 	display: none; 
 }
 
+.carousel-break { 
+	display: none; 
+}
+
 @media (max-width: 1000px) {
     .short-title { display: inline-block; }
+		.carousel-break { display: inline-block; }
     .long-title { display: none; }
 		.short-title2 { display: none; }
 }
 
 @media (max-width: 620px) {
     .short-title2 { display: inline-block; }
+		.carousel-break { display: inline-block; }
     .long-title { display: none; }
 		.short-title { display: none; }
 }
