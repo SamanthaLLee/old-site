@@ -245,8 +245,8 @@ img.landingGraphic {
 	
 	position: absolute;
 	width: 35vw;
-	left: 27%;
-	top: 27%;
+	right: 30vw;
+	bottom: 10vh;
 
 	background: url(IMG_0719.png);
 	transform: rotate(0.35deg); }
@@ -254,9 +254,11 @@ img.landingGraphic {
 	img.speechGif {
 		
 		position: absolute;
-		width: 25%;
-		left: 55%;
-		top: 30%; }
+		padding-left: 27vw;
+		padding-bottom: 7vw;
+		width: 50vw;
+		right: 15vw;
+		bottom: 10vh; }
 		
 		img.account {
 			width: 50px;
