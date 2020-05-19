@@ -4631,7 +4631,7 @@ a.close.disabled {
 
 .carousel-inner {
   position: relative;
-  width: 350px;
+  width: 25vw;
   white-space: normal;
   overflow: hidden; }
   .carousel-inner::after {
@@ -4821,9 +4821,6 @@ a.close.disabled {
   -moz-transition-duration:0.5s;
   -webkit-transition-duration:0.5s;
   -o-transition-duration:0.5s;
-
-
-
 }
 
 @keyframes spinner-border {

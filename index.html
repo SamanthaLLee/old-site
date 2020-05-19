@@ -22,7 +22,7 @@
 
 		<script>
       $(document).ready(function(){
-        $('a[href*="#"]:not([href="#"]):not([href="#carouselControls"]):not([href="#collapse1"]):not([href="#collapse2"]):not([href="#collapse3"])').on('click', function(event) {
+        $('a[href*="#"]:not([href="#"]):not([href="#carouselControls"]):not([href="#project1"]):not([href="#project2"]):not([href="#project3"]):not([href="#activity1"]):not([href="#activity2"]):not([href="#activity3"])').on('click', function(event) {
           if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -88,12 +88,12 @@ $(document).ready(function(){
 			</p>
 			
 			<p class="currentTitles">
-				Sophomore @ Rutgers
+				Rising Junior @ Rutgers
 				<br>App Dev Intern @ Vanguard
 				<br>Consultant in Training @ OIT
 			</p>
       <p class="accounts">
-				<a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="Resume" href="traditional_resume.png"><img class = "account1" src="img/resumeicon.png"></a>
+				<a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="Resume" href="docs/traditional_resume.pdf"><img class = "account1" src="img/resumeicon.png"></a>
         <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="samantha.lin.lee@gmail.com" href="mailto:samantha.lin.lee@gmail.com"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/email-sign.png"></a>
         <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="in/SamanthaLLee" href="https://www.linkedin.com/in/samanthallee/"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/linkedin-circled.png"></a>
         <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="@SamanthaLLee" href="https://github.com/SamanthaLLee"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/github.png"></a><br>
@@ -171,9 +171,8 @@ $(document).ready(function(){
 						<span class="carousel-break"> <br> </span>
 
             Hello! I'm Sam Lee, a rising junior at Rutgers University–New Brunswick pursuing a double major
-            in Computer Science and Cognitive Science.
-
-            <br><br>I care about social justice, K-12 outreach, and [something else].
+            in Computer Science and Cognitive Science. My interests lie in software engineering, data science, and design, 
+						and I am passionate about social justice and K-12 outreach.
 						
 						<br><br>In the future, I hope to attend graduate school and conduct research that helps the underprivileged.
 
@@ -187,7 +186,7 @@ $(document).ready(function(){
       <section class="p-3 p-lg-5 d-flex align-items-center" >
         <div class="w-100">
           <h2><center>RESUMES</center></h2>
-            <center><i>Click to expand.</i></center><br>
+          <br>
 
           <center>
           <a href="docs/traditional_resume.pdf"><img class="resume" src="docs/traditional_resume.jpg" width="47%" height=auto></img></a>
@@ -204,7 +203,7 @@ $(document).ready(function(){
       <section class="p-3 p-lg-5 d-flex align-items-center" >
         <div class="w-100">
           <h2><center>RESEARCH</center></h2>
-					<center><i>Click to expand.</i></center><br>
+				  <br>
          
 					<center>
 				  <a href="docs/Coagmento.pdf"><img class="resume" src="docs/Coagmento.jpg" width="47%" height=auto></img></a>
@@ -222,35 +221,32 @@ $(document).ready(function(){
 			<section class="p-3 p-lg-5 d-flex align-items-center" >
         <div class="w-100">
           <h2><center>PROJECTS</center></h2>
-					<center><i>Click to expand.</i></center><br>
+					<br>
          
 					<!--Accordion wrapper-->
-			<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+			<div class="accordion md-accordion mx-auto" style="width:95%" id="projectaccordion" role="tablist" aria-multiselectable="true">
 
 			<!-- Accordion card -->
 			<div class="card">
 
 			<!-- Card header -->
 			<div class="card-header" role="tab" id="headingOne1">
-				<a data-toggle="collapse" data-parent="#accordionEx" href="#collapse1" aria-expanded="true"
-					aria-controls="collapse1">
-					<h5 class="mb-0">
-						Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
+				<a data-toggle="collapse" data-parent="#projectaccordion" href="#project1" aria-expanded="true"
+					aria-controls="project1">
+					<h5 class="mb-0">						
+						Where's the File? (WTF) <i class="fas fa-angle-down rotate-icon"></i>
 					</h5>
 				</a>
 			</div>
 
 			<!-- Card body -->
-			<div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-				data-parent="#accordionEx">
+			<div id="project1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+				data-parent="#projectaccordion">
 				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-					wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-					eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-					assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-					nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-					farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-					labore sustainable VHS.
+					<p>Description: WTF is a version control system that allows 
+					multiple clients to modify a repository in a remote server. 
+					<p>Languages: C
+					<p>Technologies: sockets, multithreading, file I/O
 				</div>
 			</div>
 
@@ -262,25 +258,24 @@ $(document).ready(function(){
 
 			<!-- Card header -->
 			<div class="card-header" role="tab" id="headingTwo2">
-				<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapse2"
-					aria-expanded="false" aria-controls="collapse2">
+				<a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project2"
+					aria-expanded="false" aria-controls="project2">
 					<h5 class="mb-0">
-						Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+						Coagmento <i class="fas fa-angle-down rotate-icon"></i>
 					</h5>
 				</a>
 			</div>
 
 			<!-- Card body -->
-			<div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-				data-parent="#accordionEx">
+			<div id="project2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+				data-parent="#projectaccordion">
 				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-					wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-					eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-					assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-					nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-					farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-					labore sustainable VHS.
+					<p>Description: Coagmento is a software that helps people conduct
+					information retrieval research by	streamlining the process of creating,
+					designing, and running user studies. 
+
+					<p>Languages: PHP, JavaScript, SQL
+					<p>Technologies: Pipelining, Laravel, mySQL
 				</div>
 			</div>
 
@@ -292,32 +287,26 @@ $(document).ready(function(){
 
 			<!-- Card header -->
 			<div class="card-header" role="tab" id="headingThree3">
-				<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapse3"
-					aria-expanded="false" aria-controls="collapse3">
+				<a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project3"
+					aria-expanded="false" aria-controls="project3">
 					<h5 class="mb-0">
-						Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+						Vanguard <i class="fas fa-angle-down rotate-icon"></i>
 					</h5>
 				</a>
 			</div>
 
 			<!-- Card body -->
-			<div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-				data-parent="#accordionEx">
+			<div id="project3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+				data-parent="#projectaccordion">
 				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-					wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-					eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-					assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-					nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-					farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-					labore sustainable VHS.
+					<p>Coming soon!
 				</div>
 			</div>
 
 			</div>
 			<!-- Accordion card -->
 
-			</div>
+		</div>
 			<!-- Accordion wrapper -->
 			
 	
@@ -329,35 +318,35 @@ $(document).ready(function(){
 			<section class="p-3 p-lg-5 d-flex align-items-center" >
 				<div class="w-100">
 					<h2><center>ACTIVITIES</center></h2>
-					<center><i>Click to expand.</i></center><br>
+				  <br>
 				 
 					<!--Accordion wrapper-->
-			<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+					
+			<div class="accordion md-accordion mx-auto" style="width:95%" id="activityaccordian" role="tablist" aria-multiselectable="true">
 
 			<!-- Accordion card -->
 			<div class="card">
 
 			<!-- Card header -->
 			<div class="card-header" role="tab" id="headingOne1">
-				<a data-toggle="collapse" data-parent="#accordionEx" href="#collapse1" aria-expanded="true"
-					aria-controls="collapse1">
+				<a data-toggle="collapse" data-parent="#activityaccordian" href="#activity1" aria-expanded="true"
+					aria-controls="activity1">
 					<h5 class="mb-0">
-						Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
+						Women in Computer Science <i class="fas fa-angle-down rotate-icon"></i>
 					</h5>
 				</a>
 			</div>
 
 			<!-- Card body -->
-			<div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-				data-parent="#accordionEx">
+			<div id="activity1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+				data-parent="#activityaccordian">
 				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-					wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-					eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-					assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-					nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-					farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-					labore sustainable VHS.
+					<p>Rutgers Women in Computer Science is a student organization dedicated to the advancement of womxn 
+					in CS. We aim to build a supportive community, promote educational and professional development, 
+					and empower our members to overcome societal barriers. 
+					<p>From April '19 to April '20, I was the Graphics Chair of WiCS. In this position, I exercises my design skills  
+					to fortify our brand image, attract company sponsors, and market our events to thousands.
+					<p>Currently, I am the Hackaton Director of WiCS. See HackHERS below.
 				</div>
 			</div>
 
@@ -369,25 +358,21 @@ $(document).ready(function(){
 
 			<!-- Card header -->
 			<div class="card-header" role="tab" id="headingTwo2">
-				<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapse2"
-					aria-expanded="false" aria-controls="collapse2">
+				<a class="collapsed" data-toggle="collapse" data-parent="#activityaccordian" href="#activity2"
+					aria-expanded="false" aria-controls="activity2">
 					<h5 class="mb-0">
-						Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+						HackHERS <i class="fas fa-angle-down rotate-icon"></i>
 					</h5>
 				</a>
 			</div>
 
 			<!-- Card body -->
-			<div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-				data-parent="#accordionEx">
+			<div id="activity2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+				data-parent="#activityaccordian">
 				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-					wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-					eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-					assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-					nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-					farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-					labore sustainable VHS.
+					<p>HackHERS is the annual, women-centric hackathon at Rutgers University.
+					We aim to create a space in which womxn can explore tech culture and 
+					be empowered to create with code.
 				</div>
 			</div>
 
@@ -399,32 +384,29 @@ $(document).ready(function(){
 
 			<!-- Card header -->
 			<div class="card-header" role="tab" id="headingThree3">
-				<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapse3"
-					aria-expanded="false" aria-controls="collapse3">
+				<a class="collapsed" data-toggle="collapse" data-parent="#activityaccordian" href="#activity3"
+					aria-expanded="false" aria-controls="activity3">
 					<h5 class="mb-0">
-						Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+						Girls Who Code <i class="fas fa-angle-down rotate-icon"></i>
 					</h5>
 				</a>
 			</div>
 
 			<!-- Card body -->
-			<div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-				data-parent="#accordionEx">
+			<div id="activity3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+				data-parent="#activityaccordian">
 				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-					wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-					eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-					assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-					nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-					farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-					labore sustainable VHS.
+					<p>Rutgers Douglass-DIMACS Computing Corps is Rutgers University's official Girls Who Code College Loops chapter.
+					We dedicate ourselves to K-12 outreach encourage young girls to pursue computer science though technical workshops, 
+					panels, hackathons, and more. 
+
 				</div>
 			</div>
 
 			</div>
 			<!-- Accordion card -->
 
-			</div>
+		</div>
 			<!-- Accordion wrapper -->
 
 				 <p id="placeholder"></p>
