@@ -84,7 +84,7 @@ p {
 	
 p.currentTitles {
 	position: absolute;
-	left: 8vw;
+	left: 10vw;
 	top: 34vh;
 	text-align: left;
 	z-index:200;
@@ -98,7 +98,7 @@ p.currentTitles {
 
 p.accounts {
 	position: absolute;
-	left: 8vw;
+	left: 10vw;
 	top: 34vh;
 	margin-top: 150px;
 	z-index:100;
