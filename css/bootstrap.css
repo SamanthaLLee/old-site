@@ -86,12 +86,13 @@ p {
 	position: absolute;
 	left: 13vw;
 	top: 36vh;
+	z-index:1000;
 	font-size: 3.5vh;
 }
 	
 p.currentTitles {
 	text-align: left;
-	z-index:200;
+	z-index:1000;
 	font-family: Amiko;
 	font-style: normal;
 	font-weight: normal;
@@ -125,7 +126,7 @@ p.accounts {
 	line-height: 110%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .mobilelinks { display: inline-block; }
 		.links { display: none; }
 }
