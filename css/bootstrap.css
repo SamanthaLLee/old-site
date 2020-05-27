@@ -67,13 +67,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.title {
 position: absolute;
-left: 7vh;
+left: 50px;
 top: 9vh;
 font-family: Amiko;
 font-style: normal;
 font-weight: bold;
 font-size: 7vh;
-font-size: 50px;
+font-size: 47px;
 
 line-height: 100%;
 }
@@ -82,13 +82,15 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 	
-p.currentTitles {
+.info {
 	position: absolute;
-	left: 10vw;
-	top: 34vh;
+	left: 13vw;
+	top: 36vh;
+}
+	
+p.currentTitles {
 	text-align: left;
 	z-index:200;
-
 	font-family: Amiko;
 	font-style: normal;
 	font-weight: normal;
@@ -98,20 +100,34 @@ p.currentTitles {
 
 p.accounts {
 	position: absolute;
-	left: 10vw;
-	top: 34vh;
-	margin-top: 150px;
+	margin-top: -10px;
 	z-index:100;
 }
 
-p.links {
+.links {
 	position: absolute;
-	width: 35vw;
-	right: 5vw;
+	text-align: right;
+	right: 50px;
 	top: 9vh;
 	font-size: 4vh;
 	font-size: 25px;
 	line-height: 110%;
+}
+
+.mobilelinks {
+	display: none;
+	position: absolute;
+	text-align: right;
+	right: 50px;
+	top: 9vh;
+	font-size: 4vh;
+	font-size: 25px;
+	line-height: 110%;
+}
+
+@media (max-width: 700px) {
+    .mobilelinks { display: inline-block; }
+		.links { display: none; }
 }
 
 abbr[title],
