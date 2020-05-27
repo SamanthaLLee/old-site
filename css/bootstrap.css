@@ -211,8 +211,8 @@ a.title {
    -moz-transition: all 0.7s ease;
    -o-transition: all 0.7s ease;}
   a.title:hover {
-    color: #fff;
-    text-shadow: 3px 3px #00fffb, -3px -3px #ff0d00;
+    text-decoration: underline;
+    
     -webkit-transition: all 0.7s ease;
      -moz-transition: all 0.7s ease;
      -o-transition: all 0.7s ease;}
