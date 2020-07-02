@@ -751,6 +751,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
+	padding-top: 15px;
+  padding-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px; }
 
