@@ -4690,7 +4690,6 @@ a.close.disabled {
 
 .carousel-inner {
   position: relative;
-  width: 400px;
   white-space: normal;
   overflow: hidden; }
   .carousel-inner::after {
