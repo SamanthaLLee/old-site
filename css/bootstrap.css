@@ -732,8 +732,8 @@ pre {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: 20px;
+  margin-left: 20px; }
 
 .no-gutters {
   margin-right: 0;
@@ -756,7 +756,7 @@ pre {
 
 .col {
   flex-basis: 0;
-  flex-grow: 1;
+  flex-grow: .8;
   max-width: 100%; }
 
 .col-auto {
@@ -3617,6 +3617,18 @@ input[type="button"].btn-block {
     border-top-right-radius: 0; }
   .accordion > .card .card-header {
     margin-bottom: -1px; }
+		
+	.project {
+		font-size: 25px;
+		text-decoration:none;
+		color: #000;
+	}
+	
+	.project:hover {
+		font-size: 25px;
+		text-decoration:none;
+		
+	}
 
 .breadcrumb {
   display: flex;

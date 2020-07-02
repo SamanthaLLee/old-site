@@ -1,524 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-    <title>Samantha L. Lee</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link href="https://fonts.googleapis.com/css2?family=Amiko&display=swap" rel="stylesheet">
-		
-		<script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-  crossorigin="anonymous"></script>
-
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-		
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-		<script>
-      $(document).ready(function(){
-        $('a[href*="#"]:not([href="#"]):not([href="#carouselControls"]):not([href="#project1"]):not([href="#project2"]):not([href="#project3"]):not([href="#activity1"]):not([href="#activity2"]):not([href="#activity3"])').on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, function(){
-              window.location.hash = hash;
-            }); } }); });
-    </script>
-
-    <script>
-    $(document).ready(function(){
-      $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-      });
-      $('.nav-tabs a').on('shown.bs.tab', function(event){
-        var x = $(event.target).text();         // active tab
-        var y = $(event.relatedTarget).text();  // previous tab
-        $(".act span").text(x);
-        $(".prev span").text(y);
-      });
-    });
-    </script>
-
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-   </script>
-	 
-	 <script>
-$(document).ready(function(){
-    // Add minus icon for collapse element which is open by default
-    $(".collapse.show").each(function(){
-        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-    });
-    
-    // Toggle plus minus icon on show hide of collapse element
-    $(".collapse").on('show.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-    }).on('hide.bs.collapse', function(){
-        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-    });
-});
-</script>
-
-
-  </head>
-
-  <body data-spy="scroll" data-target=".navbar" data-offset="100">
-    <div class="jumbotron">
-			
-			<span class="long-title"><h1 class="title"><a class="title" href="#about">SAMANTHA L. LEE</h1></a></span>
-			<span class="short-title"><h1 class="title"><a class="title" href="#about">SAM L. LEE</h1></a></span>
-			<span class="short-title2"><h1 class="title"><a class="title" href="#about">SAM<br>LIN<br>LEE</h1></a></span>
-			
-			<span class="links">
-				<a class="link" href="#about">about</a>
-				<a class="link" href="#resume">resume</a>
-				<a class="link" href="#xp">experience</a>
-				<a class="link" href="#projects">projects</a>
-				<a class="link" href="#act">activities</a>
-			</span>
-			
-			<span class="mobilelinks">
-				<a class="link" href="#about">about</a><br>
-				<a class="link" href="#resume">resume</a><br>
-				<a class="link" href="#xp">experience</a><br>
-				<a class="link" href="#projects">projects</a><br>
-				<a class="link" href="#act">activities</a>
-			</span>
-			
-			<span class="info">
-				<p class="currentTitles">
-					Rising Junior @ <a href="https://rutgers.edu">Rutgers</a>
-					<br>App Dev Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a>
-					<br>Consultant in Training @ <a href="https://oit-nb.rutgers.edu/">OIT</a>
-					<br>Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a>
-				</p>
-	      <p class="accounts">
-					<a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="Resume" href="docs/traditional_resume.pdf"><img class = "account1" src="img/resumeicon.png"></a>
-	        <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="samantha.lin.lee@gmail.com" href="mailto:samantha.lin.lee@gmail.com"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/email-sign.png"></a>
-	        <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="in/SamanthaLLee" href="https://www.linkedin.com/in/samanthallee/"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/linkedin-circled.png"></a>
-	        <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="@SamanthaLLee" href="https://github.com/SamanthaLLee"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/github.png"></a><br>
-	      </p>
-		 </span>
-		
-			<img class="landingGraphic" src="img/me.PNG"></img>
-			<img class="speechGif" src="img/welcome2.png"></img>
-			<br><br>
-
-    </div>
-
-    <nav id=main-nav class="navbar navbar-expand navbar-light bg-white  sticky-top">
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#resume">resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#xp">experience</a>
-          </li>
-					<li class="nav-item">
-            <a class="nav-link" href="#projects">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#act">activites</a>
-          </li>
-        </ul>
+   <head>
+      <title>Samantha L. Lee</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link href="https://fonts.googleapis.com/css2?family=Amiko&display=swap" rel="stylesheet">
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           $('a[href*="#"]:not([href="#"]):not([href="#carouselControls"]):not([href="#project1"]):not([href="#project2"]):not([href="#project3"]):not([href="#activity1"]):not([href="#activity2"]):not([href="#activity3"])').on('click', function(event) {
+             if (this.hash !== "") {
+               event.preventDefault();
+               var hash = this.hash;
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 600, function(){
+                 window.location.hash = hash;
+               }); } }); });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $(".nav-tabs a").click(function(){
+             $(this).tab('show');
+           });
+           $('.nav-tabs a').on('shown.bs.tab', function(event){
+             var x = $(event.target).text();         // active tab
+             var y = $(event.relatedTarget).text();  // previous tab
+             $(".act span").text(x);
+             $(".prev span").text(y);
+           });
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+             // Add minus icon for collapse element which is open by default
+             $(".collapse.show").each(function(){
+                 $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+             });
+             
+             // Toggle plus minus icon on show hide of collapse element
+             $(".collapse").on('show.bs.collapse', function(){
+                 $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+             }).on('hide.bs.collapse', function(){
+                 $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+             });
+         });
+      </script>
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="100">
+      <div class="jumbotron">
+         <span class="long-title">
+            <h1 class="title"><a class="title" href="#about">SAMANTHA L. LEE</h1>
+            </a>
+         </span>
+         <span class="short-title">
+            <h1 class="title"><a class="title" href="#about">SAM L. LEE</h1>
+            </a>
+         </span>
+         <span class="short-title2">
+            <h1 class="title"><a class="title" href="#about">SAM<br>LIN<br>LEE</h1>
+            </a>
+         </span>
+         <span class="links">
+         <a class="link" href="#about">about</a>
+         <a class="link" href="#resume">resume</a>
+         <a class="link" href="#xp">experience</a>
+         <a class="link" href="#projects">projects</a>
+         <a class="link" href="#act">activities</a>
+         </span>
+         <span class="mobilelinks">
+         <a class="link" href="#about">about</a><br>
+         <a class="link" href="#resume">resume</a><br>
+         <a class="link" href="#xp">experience</a><br>
+         <a class="link" href="#projects">projects</a><br>
+         <a class="link" href="#act">activities</a>
+         </span>
+         <span class="info">
+            <p class="currentTitles">
+               Rising Junior @ <a href="https://rutgers.edu">Rutgers</a>
+               <br>App Dev Intern @ <a href="https://investor.vanguard.com/home">Vanguard</a>
+               <br>Consultant in Training @ <a href="https://oit-nb.rutgers.edu/">OIT</a>
+               <br>Former RA @ <a href="https://www.infoseeking.org/index.php">InfoSeeking</a>
+            </p>
+            <p class="accounts">
+               <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="Resume" href="docs/traditional_resume.pdf"><img class = "account1" src="img/resumeicon.png"></a>
+               <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="samantha.lin.lee@gmail.com" href="mailto:samantha.lin.lee@gmail.com"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/email-sign.png"></a>
+               <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="in/SamanthaLLee" href="https://www.linkedin.com/in/samanthallee/"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/linkedin-circled.png"></a>
+               <a data-offset ="0 25" data-toggle="tooltip" data-placement="bottom" title="@SamanthaLLee" href="https://github.com/SamanthaLLee"><img class = "account" src="https://img.icons8.com/ios-glyphs/60/000000/github.png"></a><br>
+            </p>
+         </span>
+         <img class="landingGraphic" src="img/me.PNG"></img>
+         <img class="speechGif" src="img/welcome2.png"></img>
+         <br><br>
       </div>
-    </nav>
-		<p id="about"></p>
-		<br><br><br>
-    
-    <br><br>
-
-    <div>
-			<h2><center>ABOUT</center></h2>
-      <section class="p-3 p-lg-5 d-flex align-items-center" >
-          <!-- carousel pics must be square!!! fix later!! -->
-
-          <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false" >
-          <div class="carousel-inner" role="listbox">
-           <div class="carousel-item active">
-             <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/headshot.jpg" alt="">
-           </div>
-           <div class="carousel-item">
-             <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/coagmento_research.jpg" alt="">
-           </div>
-           <div class="carousel-item">
-             <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/research2.JPG" alt="">
-           </div>
-           <div class="carousel-item">
-             <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/google.png" alt="">
-           </div>
-           <div class="carousel-item">
-             <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ig.JPG" alt="">
-           </div>
-           <div class="carousel-item">
-             <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/sitting.JPG" alt="">
-           </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-          </a>
-          </div>
-
-          <br><br><h3 class="about" align="left" class="mb-0">
-						<span class="carousel-break"><br></span>
-            Hello! I'm Sam Lee, a rising junior at Rutgers University–New Brunswick pursuing a double major
-            in Computer Science and Cognitive Science. My interests lie in software engineering, data science, and design, 
-						and I am passionate about social justice and K-12 outreach. In my spare time, I enjoy completing DIY projects, 
-						playing Pokémon Go, playing the flute, skateboarding, and analyzing fiction.
-						
-						<br><br>I am actively seeking new research opportunities, and in the future, I hope to attend graduate school 
-						and conduct research that empowers underprivileged people.
-
-            <p><br>
-
-          </h3>
+      <nav id=main-nav class="navbar navbar-expand navbar-light bg-white  sticky-top">
+         <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav mx-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#about">about</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#resume">resume</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#xp">experience</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#projects">projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#act">activites</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <p id="about"></p>
+      <br><br><br>
+      <br><br>
+      <div>
+         <h2>
+            <center>ABOUT</center>
+         </h2>
+         <section class="p-3 p-lg-5 d-flex align-items-center" >
+            <!-- carousel pics must be square!!! fix later!! -->
+            <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false" >
+               <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                     <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/headshot.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                     <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/coagmento_research.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                     <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/research2.JPG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                     <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/google.png" alt="">
+                  </div>
+                  <div class="carousel-item">
+                     <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ig.JPG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                     <img align="left" class="curve img-fluid img-profile rounded-circle mx-auto mb-2" src="img/sitting.JPG" alt="">
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+            <br><br>
+            <h3 class="about" align="left" class="mb-0">
+               <span class="carousel-break"><br></span>
+               Hello! I'm Sam Lee, a rising junior at Rutgers University–New Brunswick pursuing a double major
+               in Computer Science and Cognitive Science. My interests lie in software engineering, data science, and design, 
+               and I am passionate about social justice and K-12 outreach. In my spare time, I enjoy completing DIY projects, 
+               playing Pokémon Go, playing the flute, skateboarding, and analyzing fiction.
+               <br><br>I am actively seeking new research opportunities, and in the future, I hope to attend graduate school 
+               and conduct research that empowers underprivileged people.
+               <p><br>
+            </h3>
       </div>
       <p id="resume"></p>
-    </section><br><br>
-
+      </section><br><br>
       <section class="p-3 p-lg-5 d-flex align-items-center" >
-        <div class="w-100">
-          <h2><center>RESUME(S)</center></h2>
-          <br>
-
-          <center>
-          <a href="docs/traditional_resume.pdf"><img class="resume" src="docs/traditional_resume.jpg" width="47%" height=auto></img></a>
-          <a href="docs/creative_resume.pdf"><img class="resume" src="docs/creative_resume.jpg" width="47%" height=auto></img></a>
-					<br><i><br>For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn<a>.</i>
-				</center>
-
-        <p id="xp"></p>
-        </div>
-
+         <div class="w-100">
+            <h2>
+               <center>RESUME(S)</center>
+            </h2>
+            <br>
+            <center>
+               <a href="docs/traditional_resume.pdf"><img class="resume" src="docs/traditional_resume.jpg" width="47%" height=auto></img></a>
+               <a href="docs/creative_resume.pdf"><img class="resume" src="docs/creative_resume.jpg" width="47%" height=auto></img></a>
+               <br>
+               <i>
+               <br>For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn
+               </a>
+               </i>
+            </center>
+            <p id="xp"></p>
+         </div>
       </section>
-
-
       <section class="p-3 p-lg-5 d-flex align-items-center" >
-        <div class="w-100">
-          <h2><center>EXPERIENCE</center></h2>
-					<h3><center>coming soon ;)</center></h3><br>
-					
-				  <br>
-         <h3><center>RESEARCH</center></h3><br>
-					<center>
-				  <a href="docs/Coagmento.pdf"><img class="resume" src="docs/Coagmento.jpg" width="47%" height=auto></img></a>
-				  <a href="docs/QACLitReview.pdf"><img class="resume" src="docs/QACLitReview.jpg" width="47%" height=auto></img></a>
-					
-					<br><br>
-					<center><i>More to come!</i></center><br>
-        <h3 class="about" align="left" class="mb-0"></h2>
-
-          <p id="projects"></p>
-        </div>
-				
+         <div class="w-100">
+            <h2>
+               <center>EXPERIENCE</center>
+            </h2>
+            <br>
+            <p>
+							<h4>
+                 <center>Vanguard</center>
+              </h4>
+							<center>(coming soon!)</center>
+            </p><br>
+            <br>
+            <h4>
+               <center>InfoSeeking</center>
+            </h4>
+            <br>
+            <center>
+            <a href="docs/Coagmento.pdf"><img class="resume" src="docs/Coagmento.jpg" width="47%" height=auto></img></a>
+            <a href="docs/QACLitReview.pdf"><img class="resume" src="docs/QACLitReview.jpg" width="47%" height=auto></img></a>
+            <br><br>
+            <h3 class="about" align="left" class="mb-0">
+            </h2>
+            <p id="projects"></p>
+         </div>
       </section>
-			
-			
-			<section class="p-3 p-lg-5 d-flex align-items-center" >
-        <div class="w-100">
-          <h2><center>PROJECTS</center></h2>
-					<br>
-         
-					<!--Accordion wrapper-->
-			<div class="accordion md-accordion mx-auto" style="width:95%" id="projectaccordion" role="tablist" aria-multiselectable="true">
-
-			<!-- Accordion card -->
-			<div class="card">
-
-			<!-- Card header -->
-			<div class="card-header" role="tab" id="headingOne1">
-				<a data-toggle="collapse" data-parent="#projectaccordion" href="#project1" aria-expanded="true"
-					aria-controls="project1">
-					<h5 class="mb-0">						
-						Where's the File? (WTF) <i class="fas fa-angle-down rotate-icon"></i>
-					</h5>
-				</a>
-			</div>
-
-			<!-- Card body -->
-			<div id="project1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-				data-parent="#projectaccordion">
-				<div class="card-body">
-					<p>Description: WTF is a version control system that allows 
-					multiple clients to modify a repository in a remote server. 
-					<p>Languages: C
-					<p>Technologies: sockets, multithreading, file I/O
-				</div>
-			</div>
-
-			</div>
-			<!-- Accordion card -->
-
-			<!-- Accordion card -->
-			<div class="card">
-
-			<!-- Card header -->
-			<div class="card-header" role="tab" id="headingTwo2">
-				<a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project2"
-					aria-expanded="false" aria-controls="project2">
-					<h5 class="mb-0">
-						Coagmento <i class="fas fa-angle-down rotate-icon"></i>
-					</h5>
-				</a>
-			</div>
-
-			<!-- Card body -->
-			<div id="project2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-				data-parent="#projectaccordion">
-				<div class="card-body">
-					<p>Description: Coagmento is a software that helps people conduct
-					information retrieval research by	streamlining the process of creating,
-					designing, and running user studies. 
-
-					<p>Languages: PHP, JavaScript, SQL
-					<p>Technologies: Pipelining, Laravel, mySQL
-				</div>
-			</div>
-
-			</div>
-			<!-- Accordion card -->
-
-			<!-- Accordion card -->
-			<div class="card">
-
-			<!-- Card header -->
-			<div class="card-header" role="tab" id="headingThree3">
-				<a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project3"
-					aria-expanded="false" aria-controls="project3">
-					<h5 class="mb-0">
-						Vanguard <i class="fas fa-angle-down rotate-icon"></i>
-					</h5>
-				</a>
-			</div>
-
-			<!-- Card body -->
-			<div id="project3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-				data-parent="#projectaccordion">
-				<div class="card-body">
-					<p>Coming soon!
-				</div>
-			</div>
-
-			</div>
-			<!-- Accordion card -->
-
-		</div>
-			<!-- Accordion wrapper -->
-			<p id="act"></p>
-        </div>
-				 
+      <section class="p-3 p-lg-5 d-flex align-items-center" >
+         <div class="w-100">
+            <h2>
+               <center>PROJECTS</center>
+            </h2>
+            <br>
+           
+            <div class="accordion mx-auto" style="width:70%" id="projectaccordion" role="tablist" aria-multiselectable="true">
+               <!-- Accordion card -->
+               <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="headingOne1">
+                     <a data-toggle="collapse" data-parent="#projectaccordion" href="#project1" aria-expanded="true"
+                        aria-controls="project1">
+                        <h5 class="mb-0 project">						
+                           Where's the File?: A Version Control System <i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                     </a>
+                  </div>
+                  <!-- Card body -->
+                  <div id="project1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                     data-parent="#projectaccordion">
+                     <div class="card-body">
+                        <p>Description: WTF is a version control system that allows 
+                           multiple clients to modify a repository in a remote server. 
+                        <p>Languages: C
+                        <p>Technologies: sockets, multithreading, file I/O
+                     </div>
+                  </div>
+               </div>
+               <!-- Accordion card -->
+               <!-- Accordion card -->
+               <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="headingTwo2">
+                     <a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project2"
+                        aria-expanded="false" aria-controls="project2">
+                        <h5 class="mb-0 project">
+                           You Are Not Alone: A Mental Health Resource <i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                     </a>
+                  </div>
+                  <!-- Card body -->
+                  <div id="project2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                     data-parent="#projectaccordion">
+                     <div class="card-body">
+                        <p>Description: Coagmento is a software that helps people conduct
+                           information retrieval research by	streamlining the process of creating,
+                           designing, and running user studies. 
+                        <p>Languages: PHP, JavaScript, SQL
+                        <p>Technologies: Pipelining, Laravel, mySQL
+                     </div>
+                  </div>
+               </div>
+               <!-- Accordion card -->
+               <!-- Accordion card -->
+               <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="headingThree3">
+                     <a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project3"
+                        aria-expanded="false" aria-controls="project3">
+                        <h5 class="mb-0 project">
+                           VG Sports: An Intramural Sports Web App <i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                     </a>
+                  </div>
+                  <!-- Card body -->
+                  <div id="project3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                     data-parent="#projectaccordion">
+                     <div class="card-body">
+                        <p>Coming soon!
+                     </div>
+                  </div>
+               </div>
+               <!-- Accordion card -->
+            </div>
+            
+            <p id="act"></p>
+         </div>
       </section>
-			 
-			 
-			<section class="p-3 p-lg-5 d-flex align-items-center" width="50%">
-				<div class="w-100">
-					<h2><center>ACTIVITIES</center></h2>
-				  <br>
-				 
-			
-			<br>
-			<div class="row">
-				<div type="button" data-toggle="modal" data-target="#wics" class="col">
-					<div class="thumbnail">
-						
-							<img class="resume" src="img/wicslogo.jpg" style="width:100%">
-							<div class="imgHover">
-    						<div class="hoverText">Women in Computer Science</div>
-  						</div>
-						
-					</div>
-				</div>
-				<div class="modal fade" id="wics" tabindex="-1" role="dialog" aria-labelledby="wicsTitle" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-scrollable" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="wicsTitle">WiCS</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<p>Rutgers Women in Computer Science is a student organization dedicated to the advancement of womxn 
-							in CS. We aim to build a supportive community, promote educational and professional development, 
-							and empower our members to overcome societal barriers. 
-							<p>From April '19 to April '20, I was the Graphics Chair of WiCS. In this position, I exercises my design skills  
-							to fortify our brand image, attract company sponsors, and market our events to thousands.
-							<p>Currently, I am the Hackaton Director of WiCS. HackHERS below.
-						</div>
-					</div>
-				</div>
-			</div>
-			
-				<div type="button" data-toggle="modal" data-target="#hackhers" class="col">
-					<div class="thumbnail">
-					
-							<img class="resume" src="img/genbanner.jpg" style="width:100%">
-							<div class="imgHover">
-    						<div class="hoverText">HackHERS</div>
-  						</div>
-					
-					</div>
-				</div>
-				<div class="modal fade" id="hackhers" tabindex="-1" role="dialog" aria-labelledby="hackhersTitle" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-scrollable" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="hackhersTitle">HackHERS</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<p>HackHERS is the annual, women-centric hackathon at Rutgers University.
-							We aim to create a space in which womxn can explore tech culture and 
-							be empowered to create with code.
-						</div>
-					</div>
-				</div>
-			</div>
-
-				<div type="button" data-toggle="modal" data-target="#ddcc" class="col">
-						<div class="thumbnail">
-						
-								<img class="resume" src="img/ddcc.JPG" style="width:100%">
-								<div class="imgHover">
-	    						<div class="hoverText">Douglass-DIMACS Computing Corps (Girls Who Code)</div>
-	  						</div>
-						
-						</div>
-					</div>
-				<div class="modal fade" id="ddcc" tabindex="-1" role="dialog" aria-labelledby="ddccTitle" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="ddccTitle">Douglass-DIMACS Computing Corps (GWC)</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<p>Rutgers Douglass-DIMACS Computing Corps is Rutgers University's official Girls Who Code College Loops chapter.
-								We dedicate ourselves to K-12 outreach encourage young girls to pursue computer science though technical workshops, 
-								panels, hackathons, and more. 
-							</div>
-						</div>
-					</div>
-				</div> 
-			</div>
-			<br>
-			<div class="row">
-				<div type="button" data-toggle="modal" data-target="#tutor" class="col">
-					<div class="thumbnail">
-						
-							<img class="resume" src="img/tutoring.png" style="width:100%">
-							<div class="imgHover">
-								<div class="hoverText">Honors Tutoring</div>
-							</div>
-						
-					</div>
-				</div>
-				<div class="modal fade" id="tutor" tabindex="-1" role="dialog" aria-labelledby="tutorTitle" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-scrollable" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="tutorTitle">SAS Honors Program Tutoring</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-						
-						</div>
-					</div>
-				</div>
-			</div>
-			
-				<div type="button" data-toggle="modal" data-target="#usacs" class="col">
-					<div class="thumbnail">
-					
-							<img class="resume" src="img/usacs.jpg" style="width:100%">
-							<div class="imgHover">
-								<div class="hoverText">USACS</div>
-							</div>
-					
-					</div>
-				</div>
-				<div class="modal fade" id="usacs" tabindex="-1" role="dialog" aria-labelledby="usacsTitle" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-scrollable" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="usacsTitle">Undergrad Student Alliance of Computer Scientists</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-				<div type="button" data-toggle="modal" data-target="#blueprint" class="col">
-						<div class="thumbnail">
-						
-								<img class="resume" src="img/blueprint.png" style="width:100%">
-								<div class="imgHover">
-									<div class="hoverText">Blueprint</div>
-								</div>
-						
-						</div>
-					</div>
-				<div class="modal fade" id="blueprint" tabindex="-1" role="dialog" aria-labelledby="blueprintTitle" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="blueprintTitle">Douglass-DIMACS Computing Corps (GWC)</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<p>Rutgers Douglass-DIMACS Computing Corps is Rutgers University's official Girls Who Code College Loops chapter.
-								We dedicate ourselves to K-12 outreach encourage young girls to pursue computer science though technical workshops, 
-								panels, hackathons, and more. 
-							</div>
-						</div>
-					</div>
-				</div> 
-			</div>
-			
-			
-			
-			
-			</div>
-			<p id="placeholder"></p>
-			</section>
-			<br><br>
-
-			<footer>
-					<h2>Thank you for reading!</h2>
-					
-  		</footer>
-	</body>
+      <section class="p-3 p-lg-5 d-flex align-items-center" width="50%">
+         <div class="w-100">
+            <h2>
+               <center>ACTIVITIES</center>
+            </h2>
+            <br>
+            <br>
+            <div class="container-fluid" margin="200px">
+               <div class="row">
+                  <div class="col-4">
+                     <div type="button" data-toggle="modal" data-target="#wics">
+                        <div class="thumbnail">
+                           <img class="resume" src="img/wicslogo.jpg" style="width:100%">
+                           <div class="imgHover">
+                              <div class="hoverText">Women in Computer Science</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal fade" id="wics" tabindex="-1" role="dialog" aria-labelledby="wicsTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="wicsTitle">WiCS</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <p>Rutgers Women in Computer Science is a student organization dedicated to the advancement of womxn 
+                                    in CS. We aim to build a supportive community, promote educational and professional development, 
+                                    and empower our members to overcome societal barriers. 
+                                 <p>From April '19 to April '20, I was the Graphics Chair of WiCS. In this position, I exercises my design skills  
+                                    to fortify our brand image, attract company sponsors, and market our events to thousands.
+                                 <p>Currently, I am the Hackaton Director of WiCS. HackHERS below.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div type="button" data-toggle="modal" data-target="#hackhers">
+                        <div class="thumbnail">
+                           <img class="resume" src="img/genbanner.jpg" style="width:100%">
+                           <div class="imgHover">
+                              <div class="hoverText">HackHERS</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal fade" id="hackhers" tabindex="-1" role="dialog" aria-labelledby="hackhersTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="hackhersTitle">HackHERS</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <p>HackHERS is the annual, women-centric hackathon at Rutgers University.
+                                    We aim to create a space in which womxn can explore tech culture and 
+                                    be empowered to create with code.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div type="button" data-toggle="modal" data-target="#ddcc">
+                        <div class="thumbnail">
+                           <img class="resume" src="img/ddcc.JPG" style="width:100%">
+                           <div class="imgHover">
+                              <div class="hoverText">Girls Who Code</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal fade" id="ddcc" tabindex="-1" role="dialog" aria-labelledby="ddccTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="ddccTitle">Douglass-DIMACS Computing Corps (GWC)</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <p>Rutgers Douglass-DIMACS Computing Corps is Rutgers University's official Girls Who Code College Loops chapter.
+                                    We dedicate ourselves to K-12 outreach encourage young girls to pursue computer science though technical workshops, 
+                                    panels, hackathons, and more. 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <div class="row">
+								 <div class="col-4">
+										<div type="button" data-toggle="modal" data-target="#usacs">
+											 <div class="thumbnail">
+													<img class="resume" src="img/usacs.jpg" style="width:100%">
+													<div class="imgHover">
+														 <div class="hoverText">Undergraduate Student Alliance of Computer Scientists</div>
+													</div>
+											 </div>
+										</div>
+										<div class="modal fade" id="usacs" tabindex="-1" role="dialog" aria-labelledby="usacsTitle" aria-hidden="true">
+											 <div class="modal-dialog modal-dialog-scrollable" role="document">
+													<div class="modal-content">
+														 <div class="modal-header">
+																<h5 class="modal-title" id="usacsTitle">Undergrad Student Alliance of Computer Scientists</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+																</button>
+														 </div>
+														 <div class="modal-body">
+														 </div>
+													</div>
+											 </div>
+										</div>
+								 </div>
+								 <div class="col-4">
+										<div type="button" data-toggle="modal" data-target="#tutor">
+											 <div class="thumbnail">
+													<img class="resume" src="img/tutoring.png" style="width:100%">
+													<div class="imgHover">
+														 <div class="hoverText">Honors Tutoring</div>
+													</div>
+											 </div>
+										</div>
+										<div class="modal fade" id="tutor" tabindex="-1" role="dialog" aria-labelledby="tutorTitle" aria-hidden="true">
+											 <div class="modal-dialog modal-dialog-scrollable" role="document">
+													<div class="modal-content">
+														 <div class="modal-header">
+																<h5 class="modal-title" id="tutorTitle">SAS Honors Program Tutoring</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+																</button>
+														 </div>
+														 <div class="modal-body">
+														 </div>
+													</div>
+											 </div>
+										</div>
+								 </div>
+               </div>
+            </div>
+         </div>
+         <p id="placeholder"></p>
+      </section>
+      <br><br>
+      <footer>
+         <h2>Thank you for reading!</h2>
+      </footer>
+   </body>
 </html>
