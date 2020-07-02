@@ -3854,24 +3854,6 @@ input[type="button"].btn-block {
 	display: none; 
 }
 
-.carousel-break { 
-	display: none; 
-}
-
-@media (max-width: 1000px) {
-    .short-title { display: inline-block; }
-		.carousel-break { display: inline-block; }
-    .long-title { display: none; }
-		.short-title2 { display: none; }
-}
-
-@media (max-width: 620px) {
-    .short-title2 { display: inline-block; }
-		.carousel-break { display: inline-block; }
-    .long-title { display: none; }
-		.short-title { display: none; }
-}
-
 .jumbotron {
   padding: 1rem 1rem;
   height: 100vh;
@@ -4696,7 +4678,7 @@ a.close.disabled {
 
 .carousel-inner {
   position: relative;
-  width: 25vw;
+  width: 350px;
   white-space: normal;
   overflow: hidden; }
   .carousel-inner::after {
