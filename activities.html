@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>to do good & be good > activities</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link href="https://fonts.googleapis.com/css2?family=Amiko&display=swap" rel="stylesheet">
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           $(".nav-tabs a").click(function(){
+             $(this).tab('show');
+           });
+           $('.nav-tabs a').on('shown.bs.tab', function(event){
+             var x = $(event.target).text();         
+             var y = $(event.relatedTarget).text();  
+             $(".act span").text(x);
+             $(".prev span").text(y);
+           });
+         });
+      </script>
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="100">
+      <nav id=main-nav class="navbar navbar-expand navbar-light bg-white  sticky-top">
+         <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav mx-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#wics">wics</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#hackhers">hackHERS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#gwc">girls who code</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#usacs">usacs</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#tutoring">tutoring</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <p id="wics"></p>
+      <br><br><br>
+      <br><br>
+      <div>
+         <h1>
+            <center>WOMEN IN COMPUTER SCIENCE</center>
+         </h1>
+         <section class="p-5 d-flex">
+					 <container class="pl-5 pr-5">
+					 <p>Rutgers Women in Computer Science is a student organization dedicated to the advancement of womxn 
+             in CS. We aim to build a supportive community, promote educational and professional development, 
+             and empower our members to overcome societal barriers. 
+           from April '19 to April '20, I was the Graphics Chair of WiCS. In this position, I exercises my design skills  
+             to fortify our brand image, attract company sponsors, and market our events to thousands.
+             Currently, I am the Hackaton Director of WiCS. HackHERS below.
+				</container>
+      <p id="hackhers"></p>
+      </section><br><br>
+      <section class="p-5 d-flex">
+				<container class="pl-5 pr-5">
+         <div class="w-100">
+            <h1>
+               <center>HACKHERS</center>
+            </h1><br>
+						
+						<p>HackHERS is the annual, women-centric hackathon at Rutgers University.
+                                    We aim to create a space in which womxn can explore tech culture and 
+                                    be empowered to create with code.
+						</container>
+            <p id="gwc"></p>
+         </div>
+      </section>
+      <section class="p-5 d-flex">
+				<container class="pl-5 pr-5">
+         <div class="w-100">
+            <h1>
+               <center>GIRLS WHO CODE - DOUGLASS-DIMACS COMPUTING CORPS</center>
+            </h1><br>
+						<p>Rutgers Douglass-DIMACS Computing Corps is Rutgers University's official Girls Who Code College Loops chapter.
+                                     We dedicate ourselves to K-12 outreach encourage young girls to pursue computer science though technical workshops, 
+                                     panels, hackathons, and more. 
+            </container>
+						<p id="usacs"></p>
+         </div>
+      </section>
+      <section class="p-3 p-lg-5 d-flex align-items-center" >
+         <div class="w-100">
+            <h1>
+               <center>UNDERGRADUATE STUDENT ALLIANCE OF COMPUTER SCIENTISTS</center>
+            </h1><br>
+
+            <p id="tutoring"></p>
+         </div>
+      </section>
+      <section class="p-3 p-lg-5 d-flex align-items-center" width="50%">
+         <div class="w-100">
+            <h1>
+               <center>SAS HONORS PROGRAM TUTORING</center>
+            </h1><br>
+            
+         </div>
+				 </container>
+         <p id="placeholder"></p>
+      </section>
+      <br><br>
+      <footer>
+         <h2>Thank you for reading!</h2>
+      </footer>
+   </body>
+</html>

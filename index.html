@@ -32,8 +32,8 @@
              $(this).tab('show');
            });
            $('.nav-tabs a').on('shown.bs.tab', function(event){
-             var x = $(event.target).text();         // active tab
-             var y = $(event.relatedTarget).text();  // previous tab
+             var x = $(event.target).text(); 
+             var y = $(event.relatedTarget).text(); 
              $(".act span").text(x);
              $(".prev span").text(y);
            });
@@ -46,12 +46,9 @@
       </script>
       <script>
          $(document).ready(function(){
-             // Add minus icon for collapse element which is open by default
              $(".collapse.show").each(function(){
                  $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-             });
-             
-             // Toggle plus minus icon on show hide of collapse element
+             });             
              $(".collapse").on('show.bs.collapse', function(){
                  $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
              }).on('hide.bs.collapse', function(){
@@ -131,10 +128,10 @@
       <br><br><br>
       <br><br>
       <div>
-         <h2>
+         <h1>
             <center>ABOUT</center>
-         </h2>
-         <section class="p-3 p-lg-5 d-flex" >
+         </h1>
+         <section class="p-5 d-flex" >
 					 <div class="row mx-auto">
 						 <div class="col-md">
             <div id="carouselControls" class="carousel slide carousel-fade mb-0" data-ride="carousel" data-interval="false">
@@ -169,7 +166,7 @@
             </div>
 				</div>
 					<div class="col-md-8">
-            <h3 class="about" align="left" class="mb-0">
+            <h3 class="textcontent" align="left" class="mb-0">
                Hello! I'm Sam Lee, a rising junior at Rutgers University–New Brunswick pursuing a double major
                in Computer Science and Cognitive Science. 
 							 <br><br>My interests lie in data science and ethical tech,  
@@ -184,29 +181,29 @@
       </div>
       <p id="resume"></p>
       </section><br><br>
-      <section class="p-3 p-lg-5 d-flex align-items-center" >
+      <section class="p-5 d-flex align-items-center" >
          <div class="w-100">
-            <h2>
+            <h1>
                <center>RESUME(S)</center>
-            </h2>
+            </h1>
             <br>
             <center>
                <a href="docs/traditional_resume.pdf"><img class="resume" src="docs/traditional_resume.jpg" width="47%" height=auto></img></a>
                <a href="docs/creative_resume.pdf"><img class="resume" src="docs/creative_resume.jpg" width="47%" height=auto></img></a>
                <br>
-               <i>
-               <br>For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn
+               <h3 class="textcontent"><br>
+               For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn
                </a>
-               </i>
+						 </h3>
             </center>
             <p id="xp"></p>
          </div>
       </section>
-      <section class="p-3 p-lg-5 d-flex align-items-center" >
+      <section class="p-5 d-flex align-items-center" >
          <div class="w-100">
-            <h2>
+            <h1>
                <center>EXPERIENCE</center>
-            </h2>
+            </h1>
             <br>
             <p>
 							<h4>
@@ -224,15 +221,15 @@
             <a href="docs/QACLitReview.pdf"><img class="resume" src="docs/QACLitReview.jpg" width="47%" height=auto></img></a>
             <br><br>
             <h3 class="about" align="left" class="mb-0">
-            </h2>
+            </h3>
             <p id="projects"></p>
          </div>
       </section>
-      <section class="p-3 p-lg-5 d-flex align-items-center" >
+      <section class="p-5 d-flex align-items-center" >
          <div class="w-100">
-            <h2>
+            <h1>
                <center>PROJECTS</center>
-            </h2>
+            </h1>
             <br>
            
             <div class="accordion mx-auto" style="width:70%" id="projectaccordion" role="tablist" aria-multiselectable="true">
@@ -259,10 +256,7 @@
                      </div>
                   </div>
                </div>
-               <!-- Accordion card -->
-               <!-- Accordion card -->
                <div class="card">
-                  <!-- Card header -->
                   <div class="card-header" role="tab" id="headingTwo2">
                      <a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project2"
                         aria-expanded="false" aria-controls="project2">
@@ -271,7 +265,7 @@
                         </h5>A Mental Health Resource 
                      </a>
                   </div>
-                  <!-- Card body -->
+                  
                   <div id="project2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
                      data-parent="#projectaccordion">
                      <div class="card-body">
@@ -283,10 +277,8 @@
                      </div>
                   </div>
                </div>
-               <!-- Accordion card -->
-               <!-- Accordion card -->
+               
                <div class="card">
-                  <!-- Card header -->
                   <div class="card-header" role="tab" id="headingThree3">
                      <a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#project3"
                         aria-expanded="false" aria-controls="project3">
@@ -295,7 +287,6 @@
                         </h5>An Intramural Sports Web App 
                      </a>
                   </div>
-                  <!-- Card body -->
                   <div id="project3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
                      data-parent="#projectaccordion">
                      <div class="card-body">
@@ -303,135 +294,76 @@
                      </div>
                   </div>
                </div>
-               <!-- Accordion card -->
             </div>
             
             <p id="act"></p>
          </div>
       </section>
-      <section class="p-3 p-lg-5 d-flex align-items-center" width="50%">
+      <section class="p-5 d-flex align-items-center" width="50%">
          <div class="w-100">
-            <h2>
+            <h1>
                <center>ACTIVITIES</center>
-            </h2>
+            </h1>
             <br>
             <br>
             <div class="container-fluid" margin="200px">
                <div class="row">
                   <div class="col-md-4 col-xs-2">
-                     <div type="button" data-toggle="modal" data-target="#wics">
-                        
+                    <a href="activities.html/#wics">
+                        <div class="thumbnail">
                            <img class="resume" src="img/wicslogo.jpg" style="width:100%">
                            <div class="imgHover">
                               <div class="hoverText">Women in Computer Science</div>
                            </div>
-                    
-                     </div>
-
+                        </div>
+                  </a>
+                  
                   </div>
                   <div class="col-md-4 col-xs-2">
-                     <div type="button" data-toggle="modal" data-target="#hackhers">
+										<a href="activities.html/#hackhers">
                         <div class="thumbnail">
                            <img class="resume" src="img/genbanner.jpg" style="width:100%">
                            <div class="imgHover">
                               <div class="hoverText">HackHERS</div>
                            </div>
                         </div>
-                     </div>
-                     <div class="modal fade" id="hackhers" tabindex="-1" role="dialog" aria-labelledby="hackhersTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="hackhersTitle">HackHERS</h5>
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                 <span aria-hidden="true">&times;</span>
-                                 </button>
-                              </div>
-                              <div class="modal-body">
-                                 <p>HackHERS is the annual, women-centric hackathon at Rutgers University.
-                                    We aim to create a space in which womxn can explore tech culture and 
-                                    be empowered to create with code.
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     </a>
+                    
                   </div>
                   <div class="col-md-4 col-xs-2">
-                     <div type="button" data-toggle="modal" data-target="#ddcc">
+                     <a href="activities.html/#gwc">
                         <div class="thumbnail">
                            <img class="resume" src="img/ddcc.JPG" style="width:100%">
                            <div class="imgHover">
                               <div class="hoverText">Girls Who Code</div>
                            </div>
                         </div>
-                     </div>
-                     <div class="modal fade" id="ddcc" tabindex="-1" role="dialog" aria-labelledby="ddccTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="ddccTitle">Douglass-DIMACS Computing Corps (GWC)</h5>
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                 <span aria-hidden="true">&times;</span>
-                                 </button>
-                              </div>
-                              <div class="modal-body">
-                                 <p>Rutgers Douglass-DIMACS Computing Corps is Rutgers University's official Girls Who Code College Loops chapter.
-                                    We dedicate ourselves to K-12 outreach encourage young girls to pursue computer science though technical workshops, 
-                                    panels, hackathons, and more. 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     </a>
+                  
                   </div>
                </div>
                <div class="row">
 								 <div class="col-md-4 col-xs-2">
-										<div type="button" data-toggle="modal" data-target="#usacs">
+									<a href="activities.html/#usacs">
 											 <div class="thumbnail">
 													<img class="resume" src="img/usacs.jpg" style="width:100%">
 													<div class="imgHover">
 														 <div class="hoverText">Undergraduate Student Alliance of Computer Scientists</div>
 													</div>
 											 </div>
-										</div>
-										<div class="modal fade" id="usacs" tabindex="-1" role="dialog" aria-labelledby="usacsTitle" aria-hidden="true">
-											 <div class="modal-dialog modal-dialog-scrollable" role="document">
-													<div class="modal-content">
-														 <div class="modal-header">
-																<h5 class="modal-title" id="usacsTitle">Undergrad Student Alliance of Computer Scientists</h5>
-																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																<span aria-hidden="true">&times;</span>
-																</button>
-														 </div>
-														 <div class="modal-body">
-														 </div>
-													</div>
-											 </div>
-										</div>
+										</a>
+									
 								 </div>
 								 <div class="col-md-4 col-xs-2">
-										<div type="button" data-toggle="modal" data-target="#tutor">
+										<a href="activities.html/#tutoring">
 											 <div class="thumbnail">
 													<img class="resume" src="img/tutoring.png" style="width:100%">
 													<div class="imgHover">
 														 <div class="hoverText">Honors Tutoring</div>
 													</div>
 											 </div>
-										</div>
-										<div class="modal fade" id="tutor" tabindex="-1" role="dialog" aria-labelledby="tutorTitle" aria-hidden="true">
-											 <div class="modal-dialog modal-dialog-scrollable" role="document">
-													<div class="modal-content">
-														 <div class="modal-header">
-																<h5 class="modal-title" id="tutorTitle">SAS Honors Program Tutoring</h5>
-																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																<span aria-hidden="true">&times;</span>
-																</button>
-														 </div>
-														 <div class="modal-body">
-														 </div>
-													</div>
-											 </div>
-										</div>
+										</a>
+										
 								 </div>
                </div>
             </div>
