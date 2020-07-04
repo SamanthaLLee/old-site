@@ -3117,6 +3117,17 @@ input[type="button"].btn-block {
     color: #999;
     pointer-events: none;
     cursor: default; }
+		
+		.back {
+			color: #999;
+		 }
+		  .back:hover, .back:focus {
+				color: #626262;
+		    text-decoration: none; }
+		  .back.disabled {
+		    color: #999;
+		    pointer-events: none;
+		    cursor: default; }
 
 .nav-tabs {
   border-bottom: 1px solid #fff; }
