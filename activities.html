@@ -21,9 +21,9 @@
                event.preventDefault();
                var hash = this.hash;
                $('html, body').animate({
-         if($(hash).length){
+         
           scrollTop: $(hash).offset().top
-         }
+         
                }, 600, function(){
                  window.location.hash = hash;
                }); } }); });
