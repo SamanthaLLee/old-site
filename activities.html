@@ -15,17 +15,23 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 			<script>
- 				 $('a[href*="#"]:not([href="#"])').on('click', function(event) {
- 		 if (this.hash !== "") {
- 			 event.preventDefault();
- 				 var hash = this.hash;
- 				 if (hash.length){
- 				 $('html, body').animate({
- 								 scrollTop: $(hash).offset().top						
- 				 }, 600, function(){
- 				 window.location.hash = hash;
- 				 }); }} }); });
- 		</script>
+			$(document).ready(function(){
+				$('a[href*="#"]')
+				.not('[href="#"]')
+				.not('[href*="#act"]')
+				.on('click', function(event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+							$('html, body').animate({
+								scrollTop: $(hash).offset().top						
+								}, 600, function(){
+									window.location.hash = hash;
+							}); 
+					}
+				});
+			});
+		 </script>
       <script>
          $(document).ready(function(){
            $(".nav-tabs a").click(function(){

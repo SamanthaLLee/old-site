@@ -15,16 +15,24 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 			<script>
-					$('a[href*="#"]:not([href="#"]):not([href="#carouselControls"]):not([href="#project1"]):not([href="#project2"]):not([href="#project3"])').on('click', function(event) {
-			if (this.hash !== "") {
-				event.preventDefault();
-					var hash = this.hash;
-					if (hash.length){
-					$('html, body').animate({
-									scrollTop: $(hash).offset().top						
-					}, 600, function(){
-					window.location.hash = hash;
-					}); }} }); });
+			$(document).ready(function(){
+				$('a[href*="#"]')
+				.not('[href="#"]')
+				.not('[href="#carouselControls"]')
+				.not('[href*="#project"]')
+				.not('[href*="activities"]')
+				.on('click', function(event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+							$('html, body').animate({
+								scrollTop: $(hash).offset().top						
+								}, 600, function(){
+									window.location.hash = hash;
+							}); 
+					}
+				});
+			});
 		 </script>
       <script>
          $(document).ready(function(){
