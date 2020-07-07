@@ -3106,6 +3106,7 @@ input[type="button"].btn-block {
   list-style: none; }
 
 .nav-link {
+	font-size:13px;
   display: block;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
