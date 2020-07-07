@@ -307,8 +307,8 @@ img.landingGraphic {
 
 footer {
 	display: flex;
-	padding: 50px;
-	background-color: #FFE4B5;
+	padding: 25px;
+	background-color: #FFE9C2;
 	color: #000;
 }
 
@@ -3457,6 +3457,24 @@ input[type="button"].btn-block {
   .card > .list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
+
+		.card-collapse {
+		  position: relative;
+		  display: flex;
+		  flex-direction: column;
+		  min-width: 0;
+		  word-wrap: break-word;
+		  background-clip: border-box;
+		  border-radius: 0.25rem; }
+		  .card-collapse > hr {
+		    margin-right: 0;
+		    margin-left: 0; }
+		  .card-collapse > .list-group:first-child .list-group-item:first-child {
+		    border-top-left-radius: 0.25rem;
+		    border-top-right-radius: 0.25rem; }
+		  .card-collapse > .list-group:last-child .list-group-item:last-child {
+		    border-bottom-right-radius: 0.25rem;
+		    border-bottom-left-radius: 0.25rem; }
 
 .card-body {
   flex: 1 1 auto;
