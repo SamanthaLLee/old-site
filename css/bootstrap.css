@@ -232,6 +232,15 @@ a.title {
     -moz-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
   }
+	
+	a.xp {
+	 color: #000;
+	 text-decoration: none;
+	 background-color: transparent;
+	 -webkit-transition: all 0.7s ease;
+	 -moz-transition: all 0.7s ease;
+	 -o-transition: all 0.7s ease;
+	}
 
 a:not([href]):not([tabindex]) {
   color: inherit;

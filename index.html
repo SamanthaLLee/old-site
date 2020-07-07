@@ -20,6 +20,7 @@
 				.not('[href="#"]')
 				.not('[href="#carouselControls"]')
 				.not('[href*="#projectItem"]')
+				.not('[href*="#xpItem"]')
 				.not('[href*="activities"]')
 				.on('click', function(event) {
 					if (this.hash !== "") {
@@ -210,31 +211,51 @@
       </container>
 			</section>
       <section class="p-5 d-flex align-items-center" >
-				<container class="px-md-5 px-sm-1">
-         <div class="w-100">
+				
+          <div class="w-100 px-md-5 px-sm-1">
             <h1>
                EXPERIENCE
             </h1>
             <br>
             <p>
-						<h3 class="textcontent">
-               Vanguard
-            </h3>
-            (coming soon!)
-            </p><br>
-            <br>
-            <h3 class="textcontent">
-              InfoSeeking
-            </h3>
-            <br>
-            <a href="docs/Coagmento.pdf"><img class="resume" src="docs/Coagmento.jpg" width="49%" height=auto></img></a>
-            <a href="docs/QACLitReview.pdf"><img class="resume" src="docs/QACLitReview.jpg" width="49%" height=auto></img></a>
-            <br><br>
-            <h3 class="about" align="left" class="mb-0">
-            </h3>
+							<div class="accordion" style="width:100%" id="xpaccordion" role="tablist" aria-multiselectable="true">
+	               <div class="card-collapse">
+	                  <div class="card-header" role="tab" id="xp1heading">
+	                     <a class="xp" data-toggle="collapse" data-parent="#xpaccordion" href="#xpItem1" aria-expanded="true" aria-controls="xpItem1">
+	                        <h3 class="mb-0 projects">					
+	                           Application Development Intern @ Vanguard 
+	                        </h3>
+	                     </a>
+	                  </div>
+	                  <div id="xpItem1" class="collapse show" role="tabpanel" aria-labelledby="xp1heading"
+	                     data-parent="#xpaccordion">
+	                     <div class="card-body">
+	                        coming soon
+	                     </div>
+	                  </div>
+	               </div>
+								 <div class="card-collapse">
+	 								 <div class="card-header" role="tab" id="xp2heading">
+	 										<a class="xp" data-toggle="collapse" data-parent="#xpaccordion" href="#xpItem2" aria-expanded="false" aria-controls="xpItem2">
+	 											 <h3 class="mb-0 projects">					
+	 													Research Assistant @ InfoSeeking
+	 											 </h3>
+	 										</a>
+	 								 </div>
+	 								 <div id="xpItem2" class="collapse" role="tabpanel" aria-labelledby="xp2heading"
+	 										data-parent="#xpaccordion">
+	 										<div class="card-body">
+												coming soon
+	 										</div>
+	 								 </div>
+	 							</div>
+							</div><br><br><br>
+							<a href="docs/Coagmento.pdf"><img class="resume" src="docs/Coagmento.jpg" width="49%" height=auto></img></a>
+							<a href="docs/QACLitReview.pdf"><img class="resume" src="docs/QACLitReview.jpg" width="49%" height=auto></img></a>
+
             <p id="projects"></p>
          </div>
-     </container>
+     
 		  </section>
       <section class="p-5 d-flex align-items-center" >
        
@@ -244,14 +265,14 @@
             </h1>
             <br>
             <div class="accordion" style="width:100%" id="projectaccordion" role="tablist" aria-multiselectable="true">
-               <div class="card">
+               <div class="card-collapse">
                   <div class="card-header" role="tab" id="headingOne1">
-                     <a data-toggle="collapse" data-parent="#projectaccordion" href="#projectItem1" aria-expanded="true"
+                     <a class="xp" data-toggle="collapse" data-parent="#projectaccordion" href="#projectItem1" aria-expanded="true"
                         aria-controls="projectItem1">
-                        <h3 class="textcontent mb-0 projects font-weight-bold">					
+                        <h3 class="textcontent mb-0 projects">					
                            Where's the File?
                         </h3>
-                        A Version Control System
+                       
                      </a>
                   </div>
                   <div id="projectItem1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
@@ -264,13 +285,13 @@
                      </div>
                   </div>
                </div>
-               <div class="card">
+               <div class="card-collapse">
                   <div class="card-header" role="tab" id="headingTwo2">
-                     <a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#projectItem2" aria-expanded="false" aria-controls="projectItem2">
-												<h3 class="textcontent mb-0 projects font-weight-bold">					
+                     <a class="xp" data-toggle="collapse" data-parent="#projectaccordion" href="#projectItem2" aria-expanded="false" aria-controls="projectItem2">
+												<h3 class="textcontent mb-0 projects">					
                            You Are Not Alone
                         </h3>
-                        A Mental Health Resource 
+                        
                      </a>
                   </div>
                   <div id="projectItem2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
@@ -284,13 +305,13 @@
                      </div>
                   </div>
                </div>
-               <div class="card">
+               <div class="card-collapse">
                   <div class="card-header" role="tab" id="headingThree3">
-                     <a class="collapsed" data-toggle="collapse" data-parent="#projectaccordion" href="#projectItem3" aria-expanded="false" aria-controls="projectItem3">
-												<h3 class="textcontent mb-0 projects font-weight-bold">					
+                     <a class="xp" data-toggle="collapse" data-parent="#projectaccordion" href="#projectItem3" aria-expanded="false" aria-controls="projectItem3">
+												<h3 class="textcontent mb-0 projects">					
                            VG Sports
                         </h3>
-                        An Intramural Sports Web App 
+                       
                      </a>
                   </div>
                   <div id="projectItem3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#projectaccordion">
