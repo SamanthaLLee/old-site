@@ -315,13 +315,13 @@ img.landingGraphic {
 }
 
 .carrd {
-	height:70px;
-	width:400px;
-	font-style: 50px;
+	height:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:300px;
 	border:dashed;
-	display: flex;
   justify-content: center;
-  align-items: center;
+	text-align: center; 
 }
 
 footer {
