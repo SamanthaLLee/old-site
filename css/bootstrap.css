@@ -40,7 +40,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, header, hgroup, main, nav, section {
   display: block; }
 
 body {
@@ -312,6 +312,16 @@ img.landingGraphic {
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.carrd {
+	height:70px;
+	width:400px;
+	font-style: 50px;
+	border:dashed;
+	display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -3135,6 +3145,14 @@ input[type="button"].btn-block {
 		    color: #999;
 		    pointer-events: none;
 		    cursor: default; }
+				
+				.carrdLink {
+					color: #000;
+				 }
+					.carrdLink:hover, .carrdLink:focus {
+						color: #fff;
+						text-decoration: none; }
+
 
 .nav-tabs {
   border-bottom: 1px solid #fff; }
