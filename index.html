@@ -200,8 +200,8 @@
                RESUME
             </h1>
             <br>      
-               <a href="docs/traditional_resume.pdf"><img class="resume" src="docs/traditional_resume.jpg" width="49%" height=auto></img></a>
-               <a href="docs/creative_resume.pdf"><img class="resume" src="docs/creative_resume.jpg" width="49%" height=auto></img></a>
+               <a href="docs/traditionalResume.pdf"><img class="resume" src="docs/traditionalResume.png" width="49%" height=auto></img></a>
+               <a href="docs/creativeResume.pdf"><img class="resume" src="docs/creativeResume.png" width="49%" height=auto></img></a>
                <br>
                <h3 class="textcontent"><br>
                   For more professional information, please visit my <a href="https://www.linkedin.com/in/samanthallee/">LinkedIn</a>.                 
@@ -247,7 +247,30 @@
 	 								 <div id="xpItem2" class="collapse" role="tabpanel" aria-labelledby="xp2heading"
 	 										data-parent="#xpaccordion">
 	 										<div class="card-body">
-												coming soon
+												<h5>Background</h5>
+												<p>As people become increasingly reliant on the Internet as a source of information, 
+													information retrieval – understood here as the science of searching for information – 
+													becomes more complex in nature, and researchers seek to understand 
+													patterns between users and how they approach a web search. User studies serve the purpose 
+													of shaping to researchers’ particular needs and providing crucial data on web search behavior 
+													through specific tasks assigned by the person conducting the study, yet present challenges 
+													while in development and are often tedious to design.
+												<h5>My Work</h5>
+												<p><a href="http://coagmento.com"/>Coagmento<a/> is a software that helps researchers by streamlining the 
+													process of creating and running a study. I worked on its custom Chrome extension, which reads various pieces of data 
+													through JavaScript functions. In determining what pieces were necessary to collect and so what the extension 
+													should and should not filter, Chrome Developer documentation proved essential to understanding the extension’s 
+													capabilities and limitations. In its current state, Coagmento records data on passive inputs (clicks, scrolls, 
+													keystrokes, etc.), changes in the browser (tab and window actions), and web navigation (pages and queries) 
+													and pushes it into a mySQL database for easy accessibility. From there, a Python script extracts browsing 
+													features from the search session that researchers can utilize as training data for machine learning.
+
+												<h5>Reflections</h5>
+												<p>Although I'd been a part of InfoSeeking for many months, my time there during the summer was the most memorable. 
+													Working on Coagmento was my first "real" technical experience, it was my first taste of agile development, 
+													it was the first time my efforts had a direct impact on the people around me.
+													I'm proud of having been able to pick up skills and languages I'd never before used, and I am moreso grateful for
+													the support I recieved through Douglass Residential College and the mentorship of Dr. Matthew Mitsui.
 	 										</div>
 	 								 </div>
 	 							</div>
@@ -279,10 +302,15 @@
                   <div id="projectItem1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
                      data-parent="#projectaccordion">
                      <div class="card-body">
-                        <p>Description: WTF is a version control system that allows 
-                           multiple clients to modify a repository in a remote server. 
-                        <p>Languages: C
-                        <p>Technologies: sockets, multithreading, file I/O
+                        <p> <i>Where's the File?</i> (WTF) is a fully functional client-server version control system written in C.
+													Through sockets, file I/O, and multithreading, it allows up to ten 
+													clients to interact with, push projects to, get projects from, 
+													and otherwise modify a repository in a remote server. While a local 
+													version of the repository exists on the client-side, the server maintains 
+													the version most recently pushed while keeping track of the project's history.
+												
+												<p>WTF supports the following commands: configure, checkout, update, 
+													upgrade, commit, push, create, destroy, add, remove, currentVersion, history, and rollback.
                      </div>
                   </div>
                </div>
@@ -298,7 +326,24 @@
                   <div id="projectItem2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
                      data-parent="#projectaccordion">
                      <div class="card-body">
-                        coming soon
+											 <p>Mental health is a topic often left undiscussed – despite the millions of people who combat mental 
+											 illnesses on a day-to-day basis, there exists a stigma against them. As a result, many feel too ashamed 
+											 to address their issues, opting instead to keep them hidden.
+											 
+											 <p><i>You Are Not Alone</i> (YANA) is a Chrome Extension written in JavaScript that directs people who need resources in the right direction. By scanning text typed 
+												 in real time, it and searches for words and phrases indicative of mental health crises. When one is detected, a notification appears on 
+												 the screen that directs the user to available resources.
+
+												 <p>There are some phrases that explicitly suggest symptoms of mental health issues, but many are more subtle. 
+													"[I] feel worthless," "nothing matters," "[I have] no energy," and other expressions
+													are ones worth addressing, even if they do not neccessarily warrant immediate action. 
+													YANA accounts for such nuances. Moreover, YANA offers users the option to search a specific block of text for 
+													such words and phrases in the case they wish to scan a message from, say, a friend. If triggered, the extension will
+													automatically	paste a customizable message (which defaults to a hotline).
+												 
+												<p>YANA relies on a content script that uses listeners to detect user actions
+													as well as a background script that controls responses to the detections.
+													The extension additionally employs the Chrome APIs storage, tabs, activeTab, contextMenus, and notifications.
                      </div>
                   </div>
                </div>
@@ -402,7 +447,7 @@
       </section>
       <br><br>
       <footer>
-        made by sam lin lee
+        made by sam lin lee :)
       </footer>
    </body>
 </html>
