@@ -3129,7 +3129,7 @@ input[type="button"].btn-block {
   list-style: none; }
 
 .nav-link {
-	font-size:13px;
+	font-size:14px;
   display: block;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
@@ -3255,9 +3255,9 @@ input[type="button"].btn-block {
   align-items: center; }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.4rem .75rem;
   font-size: 1.09375rem;
-  line-height: 1;
+  line-height: .7;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem; }
