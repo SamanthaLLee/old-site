@@ -241,6 +241,11 @@ a.title {
 	 -moz-transition: all 0.7s ease;
 	 -o-transition: all 0.7s ease;
 	}
+	
+	a.egg {
+		color: #4d4d4d;
+ 	 text-decoration: none;
+	}
 
 a:not([href]):not([tabindex]) {
   color: inherit;
